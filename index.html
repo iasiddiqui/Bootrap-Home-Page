@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>worisy</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="main">
+      <!-- ---------------------------------Sarch Bar------------------------------------------------- -->
+
+      <div class="worksiy-home-search-section">
+        <div class="worksiy-home-search-container">
+          <div
+            class="worksiy-home-search-row align-items-center justify-content-center"
+          >
+            <!-- Left Heading Section -->
+            <div
+              class="worksiy-home-search-col-md-4 worksiy-home-search-heading-text"
+            >
+              <h3>Over 7,00,000+ <br />jobs to explore</h3>
+            </div>
+
+            <!-- Right Search Bar Section -->
+            <div
+              class="worksiy-home-search-col-md-8 d-flex justify-content-center"
+            >
+              <div class="worksiy-home-search-search-bar">
+                <!-- Skills Dropdown with Icon -->
+                <div class="worksiy-home-search-input-group">
+                  <span class="worksiy-home-search-input-group-text"
+                    ><i class="fas fa-search"></i
+                  ></span>
+                  <select class="worksiy-home-search-form-select" id="skills">
+                    <option selected disabled>
+                      Enter skills / designations / companies
+                    </option>
+                    <option value="Java Developer">Java Developer</option>
+                    <option value="Java Architect">Java Architect</option>
+                    <option value="Java Full Stack Developer">
+                      Java Full Stack Developer
+                    </option>
+                    <option value="Spring Developer">Spring Developer</option>
+                    <option value="Java Back End Developer">
+                      Java Back End Developer
+                    </option>
+                    <option value="Core Java Developer">
+                      Core Java Developer
+                    </option>
+                    <option value="Java Lead">Java Lead</option>
+                    <option value="AEM Developer">AEM Developer</option>
+                    <option value="Application Developer">
+                      Application Developer
+                    </option>
+                  </select>
+                </div>
+
+                <!-- Experience Dropdown with Icon -->
+                <div class="worksiy-home-search-input-group">
+                  <span class="worksiy-home-search-input-group-text"
+                    ><i class="fas fa-briefcase"></i
+                  ></span>
+                  <select
+                    class="worksiy-home-search-form-select"
+                    id="experience"
+                  >
+                    <option selected disabled>Enter experience</option>
+                    <option value="Fresher">Fresher</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="Below 2021">Below 2021</option>
+                  </select>
+                </div>
+
+                <!-- Location Dropdown with Icon -->
+                <div class="worksiy-home-search-input-group">
+                  <span class="worksiy-home-search-input-group-text"
+                    ><i class="fas fa-map-marker-alt"></i
+                  ></span>
+                  <select class="worksiy-home-search-form-select" id="location">
+                    <option selected disabled>Enter Location</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Ahmedabad">Ahmedabad</option>
+                  </select>
+                </div>
+
+                <!-- Search Button -->
+                <button class="worksiy-home-search-btn-search">Search</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Find the perfect job for YOU-------------------------------------------------------------- -->
+
+      <div
+        class="perfect-job-for-you-container perfect-job-for-you-category-container"
+      >
+        <h4>Find the perfect job for YOU</h4>
+
+        <div class="perfect-job-for-you-category-cards">
+          <!-- Remote -->
+          <div
+            class="perfect-job-for-you-category-card perfect-job-for-you-remote"
+          >
+            <div class="perfect-job-for-you-card-content">
+              <!-- Fancy Remote Icon (Laptop with screen) -->
+              <i
+                class="fa-solid fa-laptop-code perfect-job-for-you-remote-icon"
+              ></i>
+              <h6 class="perfect-job-for-you-remote-text">Remote</h6>
+            </div>
+            <div class="perfect-job-for-you-background-style">
+              <div
+                class="perfect-job-for-you-circle perfect-job-for-you-circle-1 perfect-job-for-you-remote-circle"
+              ></div>
+              <div
+                class="perfect-job-for-you-circle perfect-job-for-you-circle-2 perfect-job-for-you-remote-circle"
+              ></div>
+              <div
+                class="perfect-job-for-you-circle perfect-job-for-you-circle-3 perfect-job-for-you-remote-circle"
+              ></div>
+            </div>
+          </div>
+
+          <!-- Freelance -->
+          <div
+            class="perfect-job-for-you-category-card perfect-job-for-you-freelance"
+          >
+            <div class="perfect-job-for-you-card-content">
+              <i
+                class="fa-solid fa-user perfect-job-for-you-freelance-text"
+              ></i>
+              <h6 class="perfect-job-for-you-freelance-text">Freelance</h6>
+            </div>
+            <div class="perfect-job-for-you-background-style">
+              <div
+                class="perfect-job-for-you-circle perfect-job-for-you-circle-1 perfect-job-for-you-freelance-circle"
+              ></div>
+              <div
+                class="perfect-job-for-you-circle perfect-job-for-you-circle-2 perfect-job-for-you-freelance-circle"
+              ></div>
+              <div
+                class="perfect-job-for-you-circle perfect-job-for-you-circle-3 perfect-job-for-you-freelance-circle"
+              ></div>
+            </div>
+          </div>
+
+          <!-- Full Time -->
+          <div
+            class="perfect-job-for-you-category-card perfect-job-for-you-full-time"
+          >
+            <div class="perfect-job-for-you-card-content">
+              <i
+                class="fa-solid fa-briefcase perfect-job-for-you-full-time-text"
+              ></i>
+              <h6 class="perfect-job-for-you-full-time-text">Full Time</h6>
+            </div>
+            <div class="perfect-job-for-you-background-style">
+              <div
+                class="perfect-job-for-you-circle perfect-job-for-you-circle-1 perfect-job-for-you-full-time-circle"
+              ></div>
+              <div
+                class="perfect-job-for-you-circle perfect-job-for-you-circle-2 perfect-job-for-you-full-time-circle"
+              ></div>
+              <div
+                class="perfect-job-for-you-circle perfect-job-for-you-circle-3 perfect-job-for-you-full-time-circle"
+              ></div>
+            </div>
+          </div>
+
+          <!-- Part Time -->
+          <div
+            class="perfect-job-for-you-category-card perfect-job-for-you-part-time"
+          >
+            <div class="perfect-job-for-you-card-content">
+              <i
+                class="fa-solid fa-clock perfect-job-for-you-part-time-text"
+              ></i>
+              <h6 class="perfect-job-for-you-part-time-text">Part Time</h6>
+            </div>
+            <div class="perfect-job-for-you-background-style">
+              <div
+                class="perfect-job-for-you-circle perfect-job-for-you-circle-1 perfect-job-for-you-part-time-circle"
+              ></div>
+              <div
+                class="perfect-job-for-you-circle perfect-job-for-you-circle-2 perfect-job-for-you-part-time-circle"
+              ></div>
+              <div
+                class="perfect-job-for-you-circle perfect-job-for-you-circle-3 perfect-job-for-you-part-time-circle"
+              ></div>
+            </div>
+          </div>
+
+          <!-- Work From Home -->
+          <div
+            class="perfect-job-for-you-category-card perfect-job-for-you-work-from-home"
+          >
+            <div class="perfect-job-for-you-card-content">
+              <!-- Fancy Work From Home Icon (Home) -->
+              <i
+                class="fa-solid fa-house-chimney perfect-job-for-you-work-from-home-icon"
+              ></i>
+              <h6 class="perfect-job-for-you-work-from-home-text">
+                Work from Home
+              </h6>
+            </div>
+            <div class="perfect-job-for-you-background-style">
+              <div
+                class="perfect-job-for-you-circle perfect-job-for-you-circle-1 perfect-job-for-you-work-from-home-circle"
+              ></div>
+              <div
+                class="perfect-job-for-you-circle perfect-job-for-you-circle-2 perfect-job-for-you-work-from-home-circle"
+              ></div>
+              <div
+                class="perfect-job-for-you-circle perfect-job-for-you-circle-3 perfect-job-for-you-work-from-home-circle"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ----------------------------featured comapnines-------------------------------------- -->
+
+      <div class="container mt-5">
+        <h6
+          class="text-center mb-3"
+          style="font-size: 1.1rem; letter-spacing: 1px; color: orange"
+        >
+          Featured Companies
+        </h6>
+
+        <div
+          class="featured-jobs-workisy-scroll-container"
+          id="companyCarousel"
+        >
+          <!-- Company Logos -->
+          <img src="assets/Topcompanies/airtal.gif" alt="Company 1" />
+          <img src="assets/Topcompanies/amazon.gif" alt="Company 2" />
+          <img src="assets/Topcompanies/apple4.webp" alt="Company 3" />
+          <img src="assets/Topcompanies/capgemini.webp" alt="Company 4" />
+          <img src="assets/Topcompanies/cognigent.webp" alt="Company 5" />
+          <img src="assets/Topcompanies/deleoite.webp" alt="Company 6" />
+          <img src="assets/Topcompanies/epam.webp" alt="Company 7" />
+          <img src="assets/Topcompanies/lt.jpeg" alt="Company 8" />
+          <img src="assets/Topcompanies/netfilx.webp" alt="Company 9" />
+          <img src="assets/Topcompanies/pwc.webp" alt="Company 10" />
+          <img src="assets/Topcompanies/tcs.gif" alt="Company 11" />
+          <img src="assets/Topcompanies/tcs.jpeg" alt="Company 12" />
+          <img src="assets/Topcompanies/xoraint.jpeg" alt="Company 13" />
+          <img src="assets/Topcompanies/zenser.jpeg" alt="Company 14" />
+          <img src="assets/Topcompanies/epam.webp" alt="Company 15" />
+          <img src="assets/Topcompanies/infosys.webp" alt="Company 16" />
+
+          <!-- Scroll Buttons -->
+          <!-- <button class="featured-jobs-workisy-scroll-btn featured-jobs-workisy-left" onclick="scrollLeft()">
+          <i class="bi bi-arrow-left"></i>
+        </button>
+        <button class="featured-jobs-workisy-scroll-btn featured-jobs-workisy-right" onclick="scrollRight()">
+          <i class="bi bi-arrow-right"></i>
+        </button> -->
+        </div>
+      </div>
+
+      <!-- popular catogeries----------------------------------------------------------------- -->
+
+      <div class="container mt-5">
+        <h6 class="mb-3 text-dark">Popular Categories</h6>
+        <div class="row g-3">
+          <!-- Card 1 -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div
+              class="popularcategories-category-card p-3 d-flex align-items-center"
+            >
+              <div
+                class="popularcategories-icon-wrapper me-2"
+                style="background-color: #e6e8ff"
+              >
+                <i class="bi bi-bank2 text-primary"></i>
+              </div>
+              <p class="popularcategories-category-title">Banking</p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div
+              class="popularcategories-category-card p-3 d-flex align-items-center"
+            >
+              <div
+                class="popularcategories-icon-wrapper me-2"
+                style="background-color: #ffe6ea"
+              >
+                <i class="bi bi-house-door text-danger"></i>
+              </div>
+              <p class="popularcategories-category-title">Home</p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div
+              class="popularcategories-category-card p-3 d-flex align-items-center"
+            >
+              <div
+                class="popularcategories-icon-wrapper me-2"
+                style="background-color: #e6f8fa"
+              >
+                <i class="bi bi-people text-info"></i>
+              </div>
+              <p class="popularcategories-category-title">Hr</p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div
+              class="popularcategories-category-card p-3 d-flex align-items-center"
+            >
+              <div
+                class="popularcategories-icon-wrapper me-2"
+                style="background-color: #e6faeb"
+              >
+                <i class="bi bi-briefcase text-success"></i>
+              </div>
+              <p class="popularcategories-category-title">Sales</p>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div
+              class="popularcategories-category-card p-3 d-flex align-items-center"
+            >
+              <div
+                class="popularcategories-icon-wrapper me-2"
+                style="background-color: #ffefdb"
+              >
+                <i class="bi bi-calculator text-warning"></i>
+              </div>
+              <p class="popularcategories-category-title">Accounting</p>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div
+              class="popularcategories-category-card p-3 d-flex align-items-center"
+            >
+              <div
+                class="popularcategories-icon-wrapper me-2"
+                style="background-color: #e6e8ff"
+              >
+                <i class="bi bi-headset text-primary"></i>
+              </div>
+              <p class="popularcategories-category-title">Customer S..</p>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div
+              class="popularcategories-category-card p-3 d-flex align-items-center"
+            >
+              <div
+                class="popularcategories-icon-wrapper me-2"
+                style="background-color: #ffe6ea"
+              >
+                <i class="bi bi-calendar-event text-danger"></i>
+              </div>
+              <p class="popularcategories-category-title">Event Man..</p>
+            </div>
+          </div>
+
+          <!-- Card 8 -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div
+              class="popularcategories-category-card p-3 d-flex align-items-center"
+            >
+              <div
+                class="popularcategories-icon-wrapper me-2"
+                style="background-color: #e6f8fa"
+              >
+                <i class="bi bi-globe text-info"></i>
+              </div>
+              <p class="popularcategories-category-title">IT</p>
+            </div>
+          </div>
+
+          <!-- Card 9 -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div
+              class="popularcategories-category-card p-3 d-flex align-items-center"
+            >
+              <div
+                class="popularcategories-icon-wrapper me-2"
+                style="background-color: #e6e8ff"
+              >
+                <i class="bi bi-code-slash text-primary"></i>
+              </div>
+              <p class="popularcategories-category-title">SQL</p>
+            </div>
+          </div>
+
+          <!-- Card 10 -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div
+              class="popularcategories-category-card p-3 d-flex align-items-center"
+            >
+              <div
+                class="popularcategories-icon-wrapper me-2"
+                style="background-color: #e6faeb"
+              >
+                <i class="bi bi-database text-success"></i>
+              </div>
+              <p class="popularcategories-category-title">Oracle</p>
+            </div>
+          </div>
+
+          <!-- Card 11 -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div
+              class="popularcategories-category-card p-3 d-flex align-items-center"
+            >
+              <div
+                class="popularcategories-icon-wrapper me-2"
+                style="background-color: #ffefdb"
+              >
+                <i class="bi bi-palette text-warning"></i>
+              </div>
+              <p class="popularcategories-category-title">Graphic Design</p>
+            </div>
+          </div>
+
+          <!-- Card 12 -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div
+              class="popularcategories-category-card p-3 d-flex align-items-center"
+            >
+              <div
+                class="popularcategories-icon-wrapper me-2"
+                style="background-color: #e6e8ff"
+              >
+                <i class="bi bi-bullseye text-primary"></i>
+              </div>
+              <p class="popularcategories-category-title">Digital Marketing</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Latest internships on Workisy start--------------------------------------------------------- -->
+
+      <div class="container mt-5">
+        <h2 class="text-center">Latest internships on Workisy</h2>
+        <div class="d-flex justify-content-center align-items-center mt-4">
+          <span class="popular-categories">Popular categories</span>
+        </div>
+        <div class="d-flex justify-content-center align-items-center mt-4">
+          <div id="category-buttons-internships">
+            <!-- Category buttons for internships will be inserted here dynamically -->
+          </div>
+        </div>
+        <div class="scroll-container mt-4" id="cards-container-internships">
+          <!-- Internship cards will be inserted here dynamically -->
+        </div>
+        <div class="custom-scrollbar mt-3 mx-auto">
+          <div id="scroll-indicator-internships"></div>
+        </div>
+      </div>
+
+      <!-- Latest jobs on Workisy start----------------------------------------------------------------- -->
+
+      <div class="container mt-5" >
+        <h2 class="text-center">Latest jobs on Workisy</h2>
+        <div class="d-flex justify-content-center align-items-center mt-4">
+          <span class="popular-categories">Popular categories</span>
+        </div>
+        <div class="d-flex justify-content-center align-items-center mt-4">
+          <div id="category-buttons-jobs">
+            <!-- Category buttons for jobs will be inserted here dynamically -->
+          </div>
+        </div>
+        <div class="scroll-container mt-4" id="cards-container-jobs">
+          <!-- Job cards will be inserted here dynamically -->
+        </div>
+        <div class="custom-scrollbar mt-3 mx-auto">
+          <div id="scroll-indicator-jobs"></div>
+        </div>
+      </div>
+
+      <div class="container my-5">
+        <!-- Find Job Vacancies By---------------------------------------------------------------------- -->
+
+        <h5 class="heading-job-vacancies">Find Job Vacancies By</h5>
+
+        <ul class="nav nav-tabs" id="jobVacancyTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a
+              class="nav-link active"
+              id="roles-tab"
+              data-bs-toggle="tab"
+              href="#roles"
+              role="tab"
+              aria-controls="roles"
+              aria-selected="true"
+              >Job by Roles</a
+            >
+          </li>
+          <li class="nav-item" role="presentation">
+            <a
+              class="nav-link"
+              id="city-tab"
+              data-bs-toggle="tab"
+              href="#city"
+              role="tab"
+              aria-controls="city"
+              aria-selected="false"
+              >Job by City</a
+            >
+          </li>
+          <li class="nav-item" role="presentation">
+            <a
+              class="nav-link"
+              id="courses-tab"
+              data-bs-toggle="tab"
+              href="#courses"
+              role="tab"
+              aria-controls="courses"
+              aria-selected="false"
+              >Job by Courses</a
+            >
+          </li>
+          <li class="nav-item" role="presentation">
+            <a
+              class="nav-link"
+              id="category-tab"
+              data-bs-toggle="tab"
+              href="#category"
+              role="tab"
+              aria-controls="category"
+              aria-selected="false"
+              >Job by Category</a
+            >
+          </li>
+        </ul>
+
+        <div class="tab-content mt-3" id="jobVacancyTabsContent">
+          <!-- Tab for Roles -->
+          <div
+            class="tab-pane fade show active"
+            id="roles"
+            role="tabpanel"
+            aria-labelledby="roles-tab"
+          >
+            <div class="d-flex flex-wrap gap-3">
+              <a href="#" class="tab-link">Accountant(1119)</a>
+              <a href="#" class="tab-link">BPO / Telecaller(703)</a>
+              <a href="#" class="tab-link">Customer / Tech Support(780)</a>
+              <a href="#" class="tab-link">Engineer(Core,Non-IT)(7014)</a>
+              <a href="#" class="tab-link">Sales / Marketing Executive(2520)</a>
+              <a href="#" class="tab-link">It Software-Engineer(11170)</a>
+            </div>
+            <div class="d-flex justify-content-center mt-4">
+              <a href="#" class="view-all-btn">View All Roles</a>
+            </div>
+          </div>
+
+          <!-- Tab for Cities -->
+          <div
+            class="tab-pane fade"
+            id="city"
+            role="tabpanel"
+            aria-labelledby="city-tab"
+          >
+            <div class="d-flex flex-wrap gap-3">
+              <a href="#" class="tab-link">Bangalore(1663)</a>
+              <a href="#" class="tab-link">Hyderabad(978)</a>
+              <a href="#" class="tab-link">Chennai(1307)</a>
+            </div>
+            <div class="d-flex justify-content-center mt-4">
+              <a href="#" class="view-all-btn">View All Cities</a>
+            </div>
+          </div>
+
+          <!-- Tab for Courses -->
+          <div
+            class="tab-pane fade"
+            id="courses"
+            role="tabpanel"
+            aria-labelledby="courses-tab"
+          >
+            <div class="d-flex flex-wrap gap-3">
+              <a href="#" class="tab-link">B.com(2933)</a>
+              <a href="#" class="tab-link">BBA/BBM(2311)</a>
+              <a href="#" class="tab-link">BE/Btech(23333)</a>
+            </div>
+            <div class="d-flex justify-content-center mt-4">
+              <a href="#" class="view-all-btn">View All Courses</a>
+            </div>
+          </div>
+
+          <!-- Tab for Category (same as Roles) -->
+          <div
+            class="tab-pane fade"
+            id="category"
+            role="tabpanel"
+            aria-labelledby="category-tab"
+          >
+            <div class="d-flex flex-wrap gap-3">
+              <a href="#" class="tab-link">Accountant(1119)</a>
+              <a href="#" class="tab-link">BPO / Telecaller(703)</a>
+              <a href="#" class="tab-link">Customer / Tech Support(780)</a>
+              <a href="#" class="tab-link">Engineer(Core,Non-IT)(7014)</a>
+              <a href="#" class="tab-link">Sales / Marketing Executive(2520)</a>
+              <a href="#" class="tab-link">It Software-Engineer(11170)</a>
+            </div>
+            <div class="d-flex justify-content-center mt-4">
+              <a href="#" class="view-all-btn">View All Categories</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Wrapper for Premium Services Sections------------------------------------------------------ -->
+
+      <div class="container">
+        <!-- Premium Services Section 1 -->
+        <div class="premium-section">
+          <div class="d-flex">
+            <!-- Left Image Section -->
+            <div class="me-3">
+              <img
+                src="assets/premium services/pimg1.png"
+                alt="Premium Service"
+                class="premium-image"
+              />
+            </div>
+
+            <!-- Right Text and Services -->
+            <div class="flex-grow-1">
+              <h5 class="fw-bold" style="font-family: Inter; font-size: 1.5vw">
+                Accelerate your job search with premium services
+              </h5>
+              <p style="font-family: Inter; font-size: 1vw">
+                Services to help you get hired, faster: from preparing your CV,
+                getting recruiter attention, finding the right jobs, and more!
+              </p>
+
+              <!-- Service Items -->
+              <div class="services-container">
+                <div class="service-btn">
+                  <i class="fas fa-bolt icon"></i>
+                  <span>Resume writing</span>
+                  <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="service-btn">
+                  <i class="fas fa-file-alt icon"></i>
+                  <span>Priority applicant</span>
+                  <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="service-btn">
+                  <i class="fas fa-pencil-alt icon"></i>
+                  <span>Resume display</span>
+                  <i class="fas fa-arrow-right"></i>
+                </div>
+              </div>
+
+              <!-- Learn More Button -->
+              <div class="d-flex justify-content-end mt-3">
+                <a href="#" class="learn-more-btn">Learn more</a>
+              </div>
+              <p class="text-center-small">Include paid services</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Premium Services Section 2 (same structure, can adjust text)------------------------------ -->
+
+        <div class="premium-section">
+          <div class="d-flex">
+            <!-- Left Image Section -->
+            <div class="me-3">
+              <img
+                src="assets/premium services/pimg1.png"
+                alt="Premium Service"
+                class="premium-image"
+              />
+            </div>
+
+            <!-- Right Text and Services -->
+            <div class="flex-grow-1">
+              <h5 class="fw-bold" style="font-family: Inter; font-size: 1.5vw">
+                Boost your profile with advanced premium services
+              </h5>
+              <p style="font-family: Inter; font-size: 1vw">
+                Enhance your chances with additional services designed to make
+                your profile stand out in a competitive job market!
+              </p>
+
+              <!-- Service Items -->
+              <div class="services-container">
+                <div class="service-btn">
+                  <i class="fas fa-bolt icon"></i>
+                  <span>Resume writing</span>
+                  <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="service-btn">
+                  <i class="fas fa-file-alt icon"></i>
+                  <span>Priority applicant</span>
+                  <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="service-btn">
+                  <i class="fas fa-pencil-alt icon"></i>
+                  <span>Resume display</span>
+                  <i class="fas fa-arrow-right"></i>
+                </div>
+              </div>
+
+              <!-- Learn More Button -->
+              <div class="d-flex justify-content-end mt-3">
+                <a href="#" class="learn-more-btn">Learn more</a>
+              </div>
+              <p class="text-center-small">Include paid services</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer strt-------------------------------------------------------------------------------- -->
+
+      <div id="footer">
+        <div class="footer-content">
+          <div class="company">
+            <h6>COMPANY</h6>
+            <ul>
+              <li>About Us</li>
+              <li>Our Team</li>
+              <li>Press</li>
+              <li>Blog</li>
+              <li>Success Stories</li>
+              <li>Advertise with us</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+
+          <div class="company">
+            <h6>CANDIDATE ZONE</h6>
+            <ul>
+              <li>CEAT</li>
+              <li>Premium Membership</li>
+              <li>Placement Preparation</li>
+              <li>Jobs Roles & Responsibilities</li>
+            </ul>
+          </div>
+
+          <div class="company">
+            <h6>EMPLOYER ZONE</h6>
+            <ul>
+              <li>Post Job for Free</li>
+              <li>End-to-End Recruitment</li>
+              <li>Campus Recruitment</li>
+              <li>Online Assessment</li>
+              <li>Resume Search</li>
+            </ul>
+          </div>
+
+          <div class="company">
+            <h6>INSTITUTE ZONE</h6>
+            <ul>
+              <li>Post Your Institute</li>
+              <li>Email/SMS Campaign</li>
+              <li>Banner Ads Campaign</li>
+              <li>Placement Assistant</li>
+            </ul>
+          </div>
+
+          <div class="follow-us">
+            <h6>Follow us</h6>
+            <div class="social-icons">
+              <button class="icon-btn facebook">
+                <i class="fab fa-facebook-f"></i>
+              </button>
+              <button class="icon-btn twitter">
+                <i class="fab fa-twitter"></i>
+              </button>
+              <button class="icon-btn linkedin">
+                <i class="fab fa-linkedin-in"></i>
+              </button>
+            </div>
+            <div class="app-store">
+              <p>Connect with us on fingertips</p>
+              <img
+                src="assets/playstore.jpg"
+                alt="Playstore"
+                class="playstore-img"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-logo">
+            <img src="assets/logo.png" alt="Logo" class="logo" />
+            <div class="footer-text">
+              <p>All trademarks are the property of their respective owners</p>
+              <p>All rights reserved © 2024 Info Edge (India) Ltd.</p>
+            </div>
+          </div>
+
+          <div class="business-logos">
+            <p>Our business</p>
+            <div class="logos-container">
+              <img
+                src="assets/footer/Accolite.gif"
+                alt="Logo 1"
+                class="logo-img"
+              />
+              <img
+                src="assets/footer/actalent.gif"
+                alt="Logo 2"
+                class="logo-img"
+              />
+              <img
+                src="assets/footer/airtal.gif"
+                alt="Logo 2"
+                class="logo-img"
+              />
+              <img
+                src="assets/footer/cognigent.gif"
+                alt="Logo 2"
+                class="logo-img"
+              />
+              <img src="assets/footer/fis.gif" alt="Logo 2" class="logo-img" />
+              <!-- Add more logos as needed -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
