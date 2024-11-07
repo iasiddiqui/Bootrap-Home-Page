@@ -1,3 +1,9 @@
+.main{
+    background-color: rgb(211, 231, 231);
+    padding-bottom: 3rem;
+}
+
+
 /* home serch bar-------------------------------------------- */
 .worksiy-home-search-section {
     background: linear-gradient(to right, #0033cc, #6699ff);
@@ -218,8 +224,8 @@
     align-items: center;
     overflow-x: hidden; /* Removed horizontal scrollbar */
     background-color: white;
-    height: 70px;
-    border-radius: 20px;
+    height: 78px;
+    border-radius: 15px;
     position: relative;
     scroll-behavior: smooth; /* Smooth scrolling for manual drag */
   }
@@ -233,7 +239,7 @@
   }
   
   /* Scroll Button Styling */
-  .featured-jobs-workisy-scroll-btn {
+  /* .featured-jobs-workisy-scroll-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -249,16 +255,16 @@
   
   .featured-jobs-workisy-scroll-btn i {
     font-size: 16px;
-  }
+  } */
   
   /* Position of Left and Right Buttons */
-  .featured-jobs-workisy-left {
+  /* .featured-jobs-workisy-left {
     left: 8%;
   }
   
   .featured-jobs-workisy-right {
     right: 8%;
-  }
+  } */
   
 
   /* ===============================popular categories========================================= */
@@ -546,6 +552,103 @@
     color: rgb(65, 64, 64);
 }
 
+
+/* ------------------------------------Top hiring companies based on skills--------------- */
+
+.hiring-companies-based-carousel-container {
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    gap: 15px;
+    scrollbar-width: none;
+  }
+
+  .hiring-companies-based-carousel-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hiring-companies-based-carousel-card {
+    height: 20rem;
+    min-width: 220px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 3px rgba(143, 138, 138, 0.219);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+  }
+
+  .hiring-companies-based-company-logo {
+    max-width: 120px;
+    margin: 0 auto 10px;
+  }
+
+  .hiring-companies-based-company-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .hiring-companies-based-review-info {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 15px;
+  }
+
+  .hiring-companies-based-review-data {
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .hiring-companies-based-view-all {
+    padding: 8px 16px;
+    color: #000000;
+    border: none;
+    border-radius: 4px;
+    border: 1px solid;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+  }
+
+  .hiring-companies-based-view-all:hover {
+    color: #fff;
+    background-color: #007bff;
+  }
+
+  .hiring-companies-based-custom-scroll-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .hiring-companies-based-scroll-track {
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    top: 19.8rem;
+    background: #c4bcbc;
+    border-radius: 10px;
+    opacity: 0.5;
+  }
+
+  .hiring-companies-based-scroll-thumb {
+    position: absolute;
+    height: 4px;
+    width: 500px;
+    background: rgb(0, 0, 253);
+    border-radius: 10px;
+  }
+
+  .top-hirings-cat-all-jobs {
+    background-color: rgba(165, 165, 214, 0.546);
+    color: rgb(0, 0, 0);
+    width: 8rem;
+    padding: 8px 5px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+  }
 
 
 

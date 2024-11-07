@@ -12,7 +12,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
       rel="stylesheet"
     />
-    
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -482,6 +482,344 @@
         </div>
       </div>
 
+      <!-- ------------------------------------------Top hiring companies based on skills------------------------------- -->
+
+      <div class="container mt-5">
+        <div class="text-center mb-4">
+          <p style="font-size: 1.8rem; font-weight: 600">
+            Top hiring companies based on skills
+          </p>
+          <select class="top-hirings-cat-all-jobs">
+            <option>All</option>
+            <option>Java</option>
+            <option>React Js</option>
+            <option>Spring boot</option>
+            <option>SAP ABAP</option>
+          </select>
+        </div>
+
+        <div class="hiring-companies-based-custom-scroll-container">
+          <div
+            class="hiring-companies-based-carousel-container"
+            id="carouselContainer"
+          >
+            <div class="hiring-companies-based-carousel-card">
+              <img
+                class="hiring-companies-based-company-logo"
+                src="data:image/gif;base64,R0lGODlhyABLAPcAAKyusnpUMvvx6vLcymtra8HBwYU8BatLBszMy+np6YpECJCQkKiVg/tdAIB4c8Kih9be5LGxsbKsq6ysrMVUCmgrA3U0BvCmdvfVu+7u7ry8vKh3TFpaWnl5ePSPTopYK8pKAP1kAampqXx5du3MtfplAfLy8mBgYFxgY8dVBfzs4NrX1PNmC/1hAUkcAvn5+Xt7e/b19efn5slUBfN4K9bZ2v7+/nV1dZhCAPVlB9ra2uNdBMlTCfllBJVGAcVNAHhpWf5nBN3X0pJFAcpsL/SCO/3272deWnFxcbK0uNrZ1vlmALCuqdJYBf359FcnBdRXA5BBAjsZBM1SAZFGBLxRB/pkAra2t6aLculjCHl7fYhMF5VJB5RCAMtSBF9fYnxzaP79+vjMrtze3/bm2ZtIA7ZLAvdnAvvq3clSBfllAtPS0WVlZZZQGfz8/OrBo8lTAvtiBMpUBctTB11dXf/+/eLh4vJxHY1SHc1SBHl5eXErAWFeYXR7gX+Af81ZCctTBdTb3qyusKyvrPhkBtqoiN7b2fNgApZFBnx3cftkBXd6fspUAtFSAspUBpBIC/tjAsdUBXl8eshTB/dkCV1ZWq61v/tkBvhmAq+tr62traOiosdTBfplA/ZeAF9fX66urtjY2F5eXtnZ2a+vr9NXA3d3d9fX13p6euO3l/RhB9aQYv39/V5fYMRSA9dRAM1WBdODTq6urWNjY7y4samxrdDW2c7P0KmvuOzs7NjY2dfa29rZ2MjIyLCytbG1s7Szs8dgHtBXEfpmANvb219fXV5gXc53QHh6eXl5e7KssN3Y3ayrrdxYAsTDw7CGX+/l3rFuPPJgBtfl7/hfAODf4MaPZfxjA8OaeXRzdspWBMlWCduie/SYYMpWBvppBK+tsvZoA7CdkV5eX8FXDl5fXl9eX66Ob9BPALONabaWe9nZ3trX1/fk1Prl09vW0eTk5dLa4MFSAfRtGMNQBrRQEdNdC/hnBa6rpslPAuCujq+trvGwhrOvrPfAl////yH5BAAAAAAALAAAAADIAEsAAAj/AP8JHEiwoMGDCBMqXMiwocOHECNKnEixosWLGDNq3Mixo8ePIEOKHEmypMmTKFOqXMmypcuXMGPKnEmzps2bOHPq3Mmzp8+fQCe2exO0aFEjNPIMMMq05wVPr4g4aUr1JgZPOZqA4FanqteYKua1yMrpB4mvaFmG8dCgBYtmFPJREJC27kl/DUL0yDqDx49YYewKDunu0LUeev/AyeM31eDHHJG2oBSiRY8mnABF4pFmKeTPFetcaJCjRAlMPaCkmZGCRz4idEHLhiimQRwWp8/0KLU6BSBHP1Z1nU1cIRrK4RCH0KuatZw5ckCcLU69oJMiDSiHyIFpye7eUyhQ/0BHjkz183X4NbhEqEQPSpB085aTIg+FSXLyHQt8vjiGQ5hcsoR3ikCiRmq9zTEDfcDp0x9xRtwxliKmVehdc77NoOEMcNDj2YOQ1dENNVZcUqGFCLIGyIYL5hNMbCAOVhsmhFzTyYklXNjbiixGJ1yMgqEhjRrXUIIJhSfqqCKLM9wHAlFApnWdJ/dcY8VhOCqZIYuAzOEFBeZF+dUF1JRgxY0lqJFliltuOAk6FMgjlZhVYdBAJ2rimCSbPG5IDiMURFcInU0JcEcDhOSpp2la9qkhBXBMwsMU9GBAaFGseECNIiYuiiKGjs6QxxRzUJDCFMLAeGlPJOwQRBCJev/KKJ9MRpJCCtvwsM0P1tiwqk/QRGPGDp0EEYKs3s23pRwbzrGNNpwc0AYQ7/zKUwwQnBJNFAc0kYWxnWCiBiRWXGllE5OY+iggXjiiYBUH+LAFGMj4YYK1OsETiiFKbGBAF2XQs8M933RSbjhn0NiEFzNMkYcXPHijjStmcIFDF/NKMoIpm7CC700Z1LDCKRCM4e8QUSDSrSqvDhOCFYQsPMMcsMCSBrxUUDHEEBl30IEeSPTycU0x6FCDEKHsS8wzUeCggAI4cFEFFDm8qggUjfyxzQFllOFDzj50gQcYWiSDih4+myLD0DK5MQYvQsQjBNIlpxNFF2ArsIcBB7j/ak89ClTgggE+DEGFD1HgkcgiDiyiB9odmLLAC2y/ZIMMSa+wQjw16MLOOtWo0zQViHBhQAUV7BGFBS5IIcUTXCBiuNiJ9JGMFiOg/Xgy2QBTuUsZJC288OywE4gd2CgQxeFU7JF6BVK0LoUBZejcxQeJaPH49twDHcrvK70wyvDkryBEINM8gEgXPvhwuvPSPwG2Dx84oH333XdgL/gouVEN+cMbxS6WoQRbrOEcCmCf3uDnOgt4DQcBQILtYHA2/D0OFTfoGP9Moi/yjWIUxNDBKW7hDFr0AwC+wMIjomYB1LXOBVxoXwD4cAQUsIEAN9ADKihowRsIbYMjCd7w/3QQwjX0QgPA0AQ+mAGAQYAiCSp0GgMdSIUZfsEcxRgHHT7BBjYgIYc87N7agAiSon0whCN0xhVIMYEJaEIQgwDAPpgADmVYggErbGH0DBeAGraiFXz4hCA/QQc6nOCGSOgAKhaJCslRjowdsYEdiBEKI2ogAm10Iyg2yUlO7gMAScDj6VxQAR8EAAWtGKQqBymKVn5iFl4E4w2uAMmOyAABBbgCKNqoCU108pebHEQtmCABS4ijDXsYXABOgIJVOnOQJziBK2dBACQgYQ211MgLEDABEbjRl6QAJjAzkYkmMsEX4tjCEwLwBRQY45nwhOYnOMABJCAgmxvJRQF6Kf/OfoJCAhLAhQSY8Atx1PALRyhHPOF5AjrUswAxwCdHbJALZ2jSn5wUhCAkkAlcyKIfSfBDJdqZyoWuUhT11EBEJeoRGySgAKDwJUZBAQBBMEEQAACHL0ZQiVag0qQnECRKCaBSlo7kpRedqSw2GQEYcMCk8qQDAa5wL6OSxKUFSOpMm/pUqIpCqsCoqlVNgtVvbtWp8YzmUCOQgbGuBKsikGk/uRpPlLLhCm11a0vK6k+6OrMVHLirWPXqEr4C06+sDCxbCUsTvoaTqWgVpEPZEIFcMPYmZQWnXzkwC03k9bI44StXOSuCz4JWJ1iNgCnoIALLnvYnl9NAAl5L29oU2va2uM2tbnfL29769rfADS5HAgIAOw=="
+                alt="Airtel Logo"
+              />
+              <div
+                style="
+                  background-color: rgba(223, 214, 203, 0.543);
+                  padding: 10px;
+                  border-radius: 10px;
+                "
+              >
+                <div class="hiring-companies-based-company-name">Airtel</div>
+                <div class="hiring-companies-based-review-info">
+                  4.0 ⭐ | 23.7k+ reviews
+                </div>
+              </div>
+              <p class="hiring-companies-based-review-data">
+                Global leader in technology services
+              </p>
+              <button class="btn hiring-companies-based-view-all">
+                View All
+              </button>
+            </div>
+            <div class="hiring-companies-based-carousel-card">
+              <img
+                class="hiring-companies-based-company-logo"
+                src="data:image/gif;base64,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"
+                alt="Cognizant Logo"
+              />
+              <div
+                style="
+                  background-color: rgba(154, 214, 214, 0.368);
+                  padding: 10px;
+                  border-radius: 10px;
+                "
+              >
+                <div class="hiring-companies-based-company-name">Cognizant</div>
+                <div class="hiring-companies-based-review-info">
+                  3.8 ⭐ | 56.7k+ reviews
+                </div>
+              </div>
+              <p class="hiring-companies-based-review-data">
+                Leading ITES company <br />
+                with global presence
+              </p>
+              <button class="btn hiring-companies-based-view-all">
+                View All
+              </button>
+            </div>
+            <div class="hiring-companies-based-carousel-card">
+              <img
+                class="hiring-companies-based-company-logo"
+                src="data:image/gif;base64,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"
+                alt="FIS Logo"
+              />
+              <div
+                style="
+                  background-color: #c4bcbc93;
+                  padding: 10px;
+                  border-radius: 10px;
+                "
+              >
+                <div class="hiring-companies-based-company-name">FIS</div>
+                <div class="hiring-companies-based-review-info">
+                  4.1 ⭐ | 5.7k+ reviews
+                </div>
+              </div>
+              <p class="hiring-companies-based-review-data">
+                FIS is hiring 3 to 10 yrs <br />
+                exp in C++ & Mumps developer
+              </p>
+              <button class="btn hiring-companies-based-view-all">
+                View All
+              </button>
+            </div>
+            <div class="hiring-companies-based-carousel-card">
+              <img
+                class="hiring-companies-based-company-logo"
+                src="data:image/gif;base64,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"
+                alt="TCS Logo"
+              />
+              <div
+                style="
+                  background-color: rgba(169, 209, 196, 0.678);
+                  padding: 10px;
+                  border-radius: 10px;
+                "
+              >
+                <div class="hiring-companies-based-company-name">FIS</div>
+                <div class="hiring-companies-based-review-info">
+                  3.5 ⭐ | 83.7k+ reviews
+                </div>
+              </div>
+              <p class="hiring-companies-based-review-data">
+                Exploring challenging and <br />
+                exciting opportunities
+              </p>
+              <button class="btn hiring-companies-based-view-all">
+                View All
+              </button>
+            </div>
+            <div class="hiring-companies-based-carousel-card">
+              <img
+                class="hiring-companies-based-company-logo"
+                src="data:image/gif;base64,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"
+                alt="TCS Logo"
+              />
+              <div
+                style="
+                  background-color: rgb(245, 245, 220);
+                  padding: 10px;
+                  border-radius: 10px;
+                "
+              >
+                <div class="hiring-companies-based-company-name">
+                  Tata Consultancy Services
+                </div>
+                <div class="hiring-companies-based-review-info">
+                  3.5 ⭐ | 83.7k+ reviews
+                </div>
+              </div>
+              <p class="hiring-companies-based-review-data">
+                Exploring challenging and <br />
+                exciting opportunities
+              </p>
+              <button class="btn hiring-companies-based-view-all">
+                View All
+              </button>
+            </div>
+            <div class="hiring-companies-based-carousel-card">
+              <img
+                class="hiring-companies-based-company-logo"
+                src="data:image/gif;base64,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"
+                alt="TCS Logo"
+              />
+              <div
+                style="
+                  background-color: rgba(152, 152, 196, 0.632);
+                  padding: 10px;
+                  border-radius: 10px;
+                "
+              >
+                <div class="hiring-companies-based-company-name">
+                  Tata Consultancy Services
+                </div>
+                <div class="hiring-companies-based-review-info">
+                  3.5 ⭐ | 83.7k+ reviews
+                </div>
+              </div>
+              <p class="hiring-companies-based-review-data">
+                Exploring challenging and <br />
+                exciting opportunities
+              </p>
+              <button class="btn hiring-companies-based-view-all">
+                View All
+              </button>
+            </div>
+            <div class="hiring-companies-based-carousel-card">
+              <img
+                class="hiring-companies-based-company-logo"
+                src="data:image/gif;base64,R0lGODlhyABLAPcAAKan31OC0Rxrijqm0jeqz1uN0zqGzm+s2Cl8oydljRIkjmii12CV1SBdmzxqznKv2nq73CB6jrjm7YvS4GWe1juV0ju10yuDpF6S1RpEln3A3iZzoez0+b3a4n+z4FFTqoPI3lR31Gum2IuQzuz5+hlchIbM33a220980FiWw0+lr8vu9qvJ2Te1zzp8zjjI0zt0zvz9/hY1khphhnfV4jyH0uny9CVvoIO9wiRqnza7zzeHmUFsx/n8/UiKtySJlFTJ22irs6/P6U9fsjfB0B91jaS45yx4tKnj6JvJ5+jq9XSNu+Ps+L2+4x9YmjWJqiOFkrnm8z520j2krdXY6xg9lFidrSpps0e30oDD3rPX3CVZiFyQsh9zjUl0z0KYtWx4uHu124y24yyKpvH1+iKBkZHS2hAcjMno7DqAzidIrg8UijyVo9Tq9SU3rKvc6cff9HeyuRhVg3apuDmKzmSI3eb1+tPm9BZRgHWy2ihYsD9p0j1kznKn2x5Umkx50MvZ5svg5VKJyj14tkyb1CF9kN3q8TmzzRc5kzVop5i95MHr7YzAybjB8yx0kSeMlGuf2jmNzhtmiC17nSwzmhVMfQsKh1mF083k5y57lB1QmPH6+xlAlT1dzvn5/PX3/fX9/iJjnRxSlvD6/dfl7RQrkEdwzGmb1y2DtmWZ1id9oenv+aXV6RUxkT1xzTt3zjmQzxxLmDmTzzmWzziZzziczzifzzii0DilzyNnnjeuzx5vizexz2KZ1TtvzlaI0htMlCODkTdUqnK+wKLb6M3x82mR3zFyqUKI0Digwm+ixCJonCdGn2e/2zmuw39+wCd2oYzE3yhujyRynobk55Kc36vo8Nrw9mnP3HLAzUKMrJzS5TeTwjmUysPM5sHP8uDs7zqlyyKAjh93jrjY7kNf0RhZg32v3xpClCiHlCpfpTeanz9HqCaPli1gsuDt8BtHl9Xi+IGi5J3H05yu2aTO5jWWtqLe40Z1xyyPpkl9xDOKtEePyCJjm0Bj0////yH5BAAAAAAALAAAAADIAEsAAAj/AP8JHEiwoMGDCBMqXMiwocOHECNKnEixosWLGDNq3Mixo8ePIEOKHEmypMmTKFOqXMmypcuXMGPKnEmzps2bOHPq3Mmzp8+fQAsCSmTKS4gQKFAEuMS0QAEMGBikOnUKEiQRfbI+yCMkqNeTZIYA0+SOh6miXv4kDRDg1y+nURn0okBhgQgRBw7c+cpX5BJ4sTSJUsfDi2G1Stu+fcpALl27eA9AANW3Mkdv8ABr8uOkQSJ8fxCzdQu38dy6d/M+6Gq5tUUOwjJo5tygQa5BSROTZuwYdeStK1wLl7iEk+zAtBuEynVMH1vFpXtDVp1Hw6jh2BnSQ2R8dmfluZZN/xu0dHfc09MPbD1RL7v7g0qYVemO/PvyHDemIfBh3vTj1OrlcUIYwb1n4D9gIDLfcZvZlwt+G2yAwBOCRIcegOuFkcUmB7pXjQwK0tdgbffdsAE0CKhygQ9Q+ecbdSecAEF7HQ5HBSIgLugdiQ+aiKKKF+STglwX/iagjBpEUaNwQ7SSo4jJlXgiAghccMEY+XzRSy+pvBhgjBBAEA2HS1Y2QilOhshglD1OWeWV+eSjRRseeLmejBBowEqZfXlTCppPrukghCi+OcYY2QjUAzl9YHhkmBpksRefQZHBzp9p6lgfj4RSaeUYX5BA0CqKGAlmnlmAwAGlQIGhAKaB7v8IXqeGdnDQHWJ8iWekWbzBqk9NKPAqoGrKKmWhVjKSUAzkhPEoqqmi8etOq1AiLKzFbjqrj55aQZlCHCRxKq8gmCDqtDgNcca1xGo64rZTqvKEIQ7dkQSkWaQKwhsxoGsTAGesO2ymUA7KrSrzQBSDBBqQa4IJi/hLkxKUBMwuwYJyym0K/UZkByv5lmvCBGRK/FIMH6xh8cCxanusNkpU1MY2Ik9wT8cmtzTCGioLjK27bBJqq0UxoDHByBNIkHNLVPDc88UtvyulMhpx8MYEWJe89EmesGMJzyv/XLDGPpDB0TXETIAEzluX9MzXYPvc7tizTkKKRzGskHTbJjX/YcnfcAfsc5rcoQMPMKKI8l0/y9AT0igSnMu3SEO4YbnlamSuhh6b6+HO51eEfsToR6Bi+hefjCTt5CI10kk5/uwhuy9S1O5CGmkYUEMkkVTgOy223HLLAAMQYE1INgyDBOsjydNJJ3zw4YADvrgCwysu3G6AAXREAosss9BSS/C4EIDFKh9psU4QzI/0SQjQS0+99dhrz7334ItPfvnN9MARJkFoxxRW1T6RxKMc0Zte9a6Xvdzd73vhG98tykcAXZihajhoRzseEbECjqQaCZwfA+3XPQjqb4IEqOAh2oARLbDhB49oRxw8SJJP1EF+C6yfA0uYPwlSUBe8AMJ1/ygSiCBA4QcwnILkaBgSJnhBgfRr4PZ4GEHypVAXQKTBRDiAg2BA4YgwXB0TR2IEKI5wh/irIgoryIsWtEBpEGEBG8rwRTDiYIwl8YQxRKjDKabxhD9sow6wYAeHFFEcZaDjF3+gRDyWZBV/yKEUH9hDK7LRjTrABtsOQoY4FCIChUhkHdMhRkeOpBGuiCIJ/+jDK7axBTrQwT0UwoIdRACUoVQkFJRlSpPIQ5VoNGErLwlLHRChGAcJhBWKcEtcijIYKvhWL0myChSc0Y/CtCQQMUkEIgBBmv+wwRyK0IUijOOWhcglFNKBiWme5Buv6CMl1RhITBqTCNQYSC130f+Fcp7TmWUIBi/daRIxyJOKgHSlPbv5gkWQggsC2AU//YnOUIpDBf4jqEl6gIFJInSY2ywmEV5ABDZIQwARnag5K1qGHYBDoyiBg0dZqc1XGvMFU3DEDFCa0n6uFJeFuCBMUaKIVWZzjds0pjMuMIMZSIKnEvXpP9PpraGiJAaQCGYlkcoLHRziCTMogSTGClWVTtWlVk0JE5CBza1SkBcWsEcCzNHUsT4VpVGlaATEYYS0qiQJufuoFXmRjEmYg651JStezQpKK/h1JX2Y5wkJEA4EmEMOJShBU52q2J5SdBIvfWxK7ECIjxJvHzPAgxzMkdnN2rWsUi0EC0S7EnKBGCCNtbgFN3JQCTn4lrWaTexdPWtO9tF2JefwXgVq0Y0b4KESqv1ta4UL2y6MYxLoO65KSEAIWVTgCHKoBHSju9rpcna4eS3CbLW7EjjwIxFbiG98E7CFBNj3vtLIrzQcwV9HZOK/mZgDewdM4AIb+MAITrCCF8zgBjv4wRDGTkAAADs="
+                alt="TCS Logo"
+              />
+              <div
+                style="
+                  background-color: rgba(152, 152, 196, 0.632);
+                  padding: 10px;
+                  border-radius: 10px;
+                "
+              >
+                <div class="hiring-companies-based-company-name">
+                  Tata Consultancy Services
+                </div>
+                <div class="hiring-companies-based-review-info">
+                  3.5 ⭐ | 83.7k+ reviews
+                </div>
+              </div>
+              <p class="hiring-companies-based-review-data">
+                Exploring challenging and <br />
+                exciting opportunities
+              </p>
+              <button class="btn hiring-companies-based-view-all">
+                View All
+              </button>
+            </div>
+
+            <div class="hiring-companies-based-carousel-card">
+              <img
+                class="hiring-companies-based-company-logo"
+                src="data:image/gif;base64,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"
+                alt="TCS Logo"
+              />
+              <div
+                style="
+                  background-color: rgba(152, 152, 196, 0.632);
+                  padding: 10px;
+                  border-radius: 10px;
+                "
+              >
+                <div class="hiring-companies-based-company-name">
+                  Tata Consultancy Services
+                </div>
+                <div class="hiring-companies-based-review-info">
+                  3.5 ⭐ | 83.7k+ reviews
+                </div>
+              </div>
+              <p class="hiring-companies-based-review-data">
+                Exploring challenging and <br />
+                exciting opportunities
+              </p>
+              <button class="btn hiring-companies-based-view-all">
+                View All
+              </button>
+            </div>
+
+            <div class="hiring-companies-based-carousel-card">
+              <img
+                class="hiring-companies-based-company-logo"
+                src="data:image/gif;base64,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"
+                alt="TCS Logo"
+              />
+              <div
+                style="
+                  background-color: rgba(152, 152, 196, 0.632);
+                  padding: 10px;
+                  border-radius: 10px;
+                "
+              >
+                <div class="hiring-companies-based-company-name">
+                  Tata Consultancy Services
+                </div>
+                <div class="hiring-companies-based-review-info">
+                  3.5 ⭐ | 83.7k+ reviews
+                </div>
+              </div>
+              <p class="hiring-companies-based-review-data">
+                Exploring challenging and <br />
+                exciting opportunities
+              </p>
+              <button class="btn hiring-companies-based-view-all">
+                View All
+              </button>
+            </div>
+
+            <div class="hiring-companies-based-carousel-card">
+              <img
+                class="hiring-companies-based-company-logo"
+                src="data:image/gif;base64,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"
+                alt="TCS Logo"
+              />
+              <div
+                style="
+                  background-color: rgba(152, 152, 196, 0.632);
+                  padding: 10px;
+                  border-radius: 10px;
+                "
+              >
+                <div class="hiring-companies-based-company-name">
+                  Tata Consultancy Services
+                </div>
+                <div class="hiring-companies-based-review-info">
+                  3.5 ⭐ | 83.7k+ reviews
+                </div>
+              </div>
+              <p class="hiring-companies-based-review-data">
+                Exploring challenging and <br />
+                exciting opportunities
+              </p>
+              <button class="btn hiring-companies-based-view-all">
+                View All
+              </button>
+            </div>
+
+            <div class="hiring-companies-based-carousel-card">
+              <img
+                class="hiring-companies-based-company-logo"
+                src="data:image/gif;base64,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"
+                alt="TCS Logo"
+              />
+              <div
+                style="
+                  background-color: rgba(152, 152, 196, 0.632);
+                  padding: 10px;
+                  border-radius: 10px;
+                "
+              >
+                <div class="hiring-companies-based-company-name">
+                  Tata Consultancy Services
+                </div>
+                <div class="hiring-companies-based-review-info">
+                  3.5 ⭐ | 83.7k+ reviews
+                </div>
+              </div>
+              <p class="hiring-companies-based-review-data">
+                Exploring challenging and <br />
+                exciting opportunities
+              </p>
+              <button class="btn hiring-companies-based-view-all">
+                View All
+              </button>
+            </div>
+          </div>
+          <div class="hiring-companies-based-scroll-track">
+            <div
+              class="hiring-companies-based-scroll-thumb"
+              id="scrollThumb"
+            ></div>
+          </div>
+          <div class=" d-flex justify-content-center " style="margin: 1rem;">
+            <button class="btn mt-3 ">View All Companies</button>
+
+          </div>
+        </div>
+      </div>
+
       <!-- Latest internships on Workisy start--------------------------------------------------------- -->
 
       <div class="container mt-5">
@@ -504,7 +842,7 @@
 
       <!-- Latest jobs on Workisy start----------------------------------------------------------------- -->
 
-      <div class="container mt-5" >
+      <div class="container mt-5">
         <h2 class="text-center">Latest jobs on Workisy</h2>
         <div class="d-flex justify-content-center align-items-center mt-4">
           <span class="popular-categories">Popular categories</span>
@@ -759,118 +1097,114 @@
           </div>
         </div>
       </div>
+    </div>
+    <!-- footer strt-------------------------------------------------------------------------------- -->
 
-      <!-- footer strt-------------------------------------------------------------------------------- -->
+    <div id="footer">
+      <div class="footer-content">
+        <div class="company">
+          <h6>COMPANY</h6>
+          <ul>
+            <li>About Us</li>
+            <li>Our Team</li>
+            <li>Press</li>
+            <li>Blog</li>
+            <li>Success Stories</li>
+            <li>Advertise with us</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
 
-      <div id="footer">
-        <div class="footer-content">
-          <div class="company">
-            <h6>COMPANY</h6>
-            <ul>
-              <li>About Us</li>
-              <li>Our Team</li>
-              <li>Press</li>
-              <li>Blog</li>
-              <li>Success Stories</li>
-              <li>Advertise with us</li>
-              <li>Contact Us</li>
-            </ul>
+        <div class="company">
+          <h6>CANDIDATE ZONE</h6>
+          <ul>
+            <li>CEAT</li>
+            <li>Premium Membership</li>
+            <li>Placement Preparation</li>
+            <li>Jobs Roles & Responsibilities</li>
+          </ul>
+        </div>
+
+        <div class="company">
+          <h6>EMPLOYER ZONE</h6>
+          <ul>
+            <li>Post Job for Free</li>
+            <li>End-to-End Recruitment</li>
+            <li>Campus Recruitment</li>
+            <li>Online Assessment</li>
+            <li>Resume Search</li>
+          </ul>
+        </div>
+
+        <div class="company">
+          <h6>INSTITUTE ZONE</h6>
+          <ul>
+            <li>Post Your Institute</li>
+            <li>Email/SMS Campaign</li>
+            <li>Banner Ads Campaign</li>
+            <li>Placement Assistant</li>
+          </ul>
+        </div>
+
+        <div class="follow-us">
+          <h6>Follow us</h6>
+          <div class="social-icons">
+            <button class="icon-btn facebook">
+              <i class="fab fa-facebook-f"></i>
+            </button>
+            <button class="icon-btn twitter">
+              <i class="fab fa-twitter"></i>
+            </button>
+            <button class="icon-btn linkedin">
+              <i class="fab fa-linkedin-in"></i>
+            </button>
           </div>
-
-          <div class="company">
-            <h6>CANDIDATE ZONE</h6>
-            <ul>
-              <li>CEAT</li>
-              <li>Premium Membership</li>
-              <li>Placement Preparation</li>
-              <li>Jobs Roles & Responsibilities</li>
-            </ul>
+          <div class="app-store">
+            <p>Connect with us on fingertips</p>
+            <img
+              src="assets/playstore.jpg"
+              alt="Playstore"
+              class="playstore-img"
+            />
           </div>
+        </div>
+      </div>
 
-          <div class="company">
-            <h6>EMPLOYER ZONE</h6>
-            <ul>
-              <li>Post Job for Free</li>
-              <li>End-to-End Recruitment</li>
-              <li>Campus Recruitment</li>
-              <li>Online Assessment</li>
-              <li>Resume Search</li>
-            </ul>
-          </div>
-
-          <div class="company">
-            <h6>INSTITUTE ZONE</h6>
-            <ul>
-              <li>Post Your Institute</li>
-              <li>Email/SMS Campaign</li>
-              <li>Banner Ads Campaign</li>
-              <li>Placement Assistant</li>
-            </ul>
-          </div>
-
-          <div class="follow-us">
-            <h6>Follow us</h6>
-            <div class="social-icons">
-              <button class="icon-btn facebook">
-                <i class="fab fa-facebook-f"></i>
-              </button>
-              <button class="icon-btn twitter">
-                <i class="fab fa-twitter"></i>
-              </button>
-              <button class="icon-btn linkedin">
-                <i class="fab fa-linkedin-in"></i>
-              </button>
-            </div>
-            <div class="app-store">
-              <p>Connect with us on fingertips</p>
-              <img
-                src="assets/playstore.jpg"
-                alt="Playstore"
-                class="playstore-img"
-              />
-            </div>
+      <div class="footer-bottom">
+        <div class="footer-logo">
+          <img src="assets/logo.png" alt="Logo" class="logo" />
+          <div class="footer-text">
+            <p>All trademarks are the property of their respective owners</p>
+            <p>All rights reserved © 2024 Info Edge (India) Ltd.</p>
           </div>
         </div>
 
-        <div class="footer-bottom">
-          <div class="footer-logo">
-            <img src="assets/logo.png" alt="Logo" class="logo" />
-            <div class="footer-text">
-              <p>All trademarks are the property of their respective owners</p>
-              <p>All rights reserved © 2024 Info Edge (India) Ltd.</p>
-            </div>
-          </div>
-
-          <div class="business-logos">
-            <p>Our business</p>
-            <div class="logos-container">
-              <img
-                src="assets/footer/Accolite.gif"
-                alt="Logo 1"
-                class="logo-img"
-              />
-              <img
-                src="assets/footer/actalent.gif"
-                alt="Logo 2"
-                class="logo-img"
-              />
-              <img
-                src="assets/footer/airtal.gif"
-                alt="Logo 2"
-                class="logo-img"
-              />
-              <img
-                src="assets/footer/cognigent.gif"
-                alt="Logo 2"
-                class="logo-img"
-              />
-              <img src="assets/footer/fis.gif" alt="Logo 2" class="logo-img" />
-              <!-- Add more logos as needed -->
-            </div>
+        <div class="business-logos">
+          <p>Our business</p>
+          <div class="logos-container">
+            <img
+              src="assets/footer/Accolite.gif"
+              alt="Logo 1"
+              class="logo-img"
+            />
+            <img
+              src="assets/footer/actalent.gif"
+              alt="Logo 2"
+              class="logo-img"
+            />
+            <img src="assets/footer/airtal.gif" alt="Logo 2" class="logo-img" />
+            <img
+              src="assets/footer/cognigent.gif"
+              alt="Logo 2"
+              class="logo-img"
+            />
+            <img src="assets/footer/fis.gif" alt="Logo 2" class="logo-img" />
+            <!-- Add more logos as needed -->
           </div>
         </div>
       </div>
     </div>
+
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>

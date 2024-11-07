@@ -213,3 +213,24 @@ let scrollInterval = setInterval(() => {
     scrollContainer.scrollBy({ left: 180, behavior: "smooth" });
   }
 }, 2000);
+
+
+// -----------------------------Top hiring companies based on skills----------------------------
+
+const carouselContainer = document.getElementById("carouselContainer");
+const scrollThumb = document.getElementById("scrollThumb");
+const scrollTrack = document.querySelector(".hiring-companies-based-scroll-track");
+
+function updateScrollThumb() {
+  const scrollRatio =
+    carouselContainer.scrollLeft /
+    (carouselContainer.scrollWidth - carouselContainer.clientWidth);
+  const thumbMaxPosition =
+    scrollTrack.clientWidth - scrollThumb.clientWidth;
+  scrollThumb.style.left = scrollRatio * thumbMaxPosition + "px";
+}
+
+carouselContainer.addEventListener("scroll", updateScrollThumb);
+
+// Initial call to position the scroll thumb correctly
+updateScrollThumb();
