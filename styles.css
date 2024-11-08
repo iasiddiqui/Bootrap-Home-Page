@@ -24,7 +24,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    gap: 8rem;
+    gap: 3vw;
 }
 
 .worksiy-home-search-col-md-4.worksiy-home-search-heading-text {
@@ -92,7 +92,7 @@
 }
 
 
-/* --------------------------perfect job for----------------------------- */
+/* --------------------------Find the perfect job for YOU----------------------------- */
 
 /* General container for centering content */
 .perfect-job-for-you-category-container {
@@ -214,30 +214,34 @@
     font-size: 3rem;
     color: rgb(5, 89, 102);
   }
+
+
+
+
   
   /* -----------------------featured jobs-------------------------------------------- */
 
 /* Scroll Container */
-.featured-jobs-workisy-scroll-container {
+/* .featured-jobs-workisy-scroll-container {
     display: flex;
-    gap: 3rem; /* Adjusted gap for better spacing */
+    gap: 3rem; 
     align-items: center;
-    overflow-x: hidden; /* Removed horizontal scrollbar */
+    overflow-x: hidden; 
     background-color: white;
     height: 78px;
     border-radius: 15px;
     position: relative;
-    scroll-behavior: smooth; /* Smooth scrolling for manual drag */
-  }
+    scroll-behavior: smooth; 
+  } */
   
   /* Image Styling */
-  .featured-jobs-workisy-scroll-container img {
+  /* .featured-jobs-workisy-scroll-container img {
     height: 40px;
     width: 150px;
     border-radius: 10px;
     object-fit: cover;
   }
-  
+   */
   /* Scroll Button Styling */
   /* .featured-jobs-workisy-scroll-btn {
     position: absolute;
@@ -264,7 +268,13 @@
   
   .featured-jobs-workisy-right {
     right: 8%;
+
   } */
+
+
+
+
+
   
 
   /* ===============================popular categories========================================= */
@@ -299,6 +309,110 @@
     color: #222; /* Darker text */
   }
   
+
+  /* ------------------------------------Top hiring companies based on skills--------------- */
+
+.hiring-companies-based-carousel-container {
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    gap: 15px;
+    scrollbar-width: none;
+  }
+
+  .hiring-companies-based-carousel-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hiring-companies-based-carousel-card {
+    height: 20rem;
+    min-width: 220px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 3px rgba(143, 138, 138, 0.219);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+  }
+
+  .hiring-companies-based-company-logo {
+    max-width:5rem;
+    margin: 0 auto 10px;
+    border-radius: 0.2rem;
+  }
+
+  .hiring-companies-based-company-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .hiring-companies-based-review-info {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 15px;
+  }
+
+  .hiring-companies-based-review-data {
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .hiring-companies-based-view-all {
+    padding: 8px 16px;
+    color: #000000;
+    border: none;
+    border-radius: 4px;
+    border: 1px solid;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+  }
+
+  .hiring-companies-based-view-all:hover {
+    color: #fff;
+    background-color: #007bff;
+  }
+
+  .hiring-companies-based-custom-scroll-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .hiring-companies-based-scroll-track {
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    top: 19.8rem;
+    background: #c4bcbc;
+    border-radius: 10px;
+    opacity: 0.5;
+  }
+
+  .hiring-companies-based-scroll-thumb {
+    position: absolute;
+    height: 4px;
+    width: 500px;
+    background: rgb(0, 0, 253);
+    border-radius: 10px;
+  }
+
+  .top-hirings-cat-all-jobs {
+    background-color: rgba(165, 165, 214, 0.546);
+    color: rgb(0, 0, 0);
+    width: 8rem;
+    padding: 8px 5px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+  }
+
+
+
+
+
+
 
 
 /* <!-- Latest jobs on Workisy and interships start -------------------------> */
@@ -552,103 +666,6 @@
     color: rgb(65, 64, 64);
 }
 
-
-/* ------------------------------------Top hiring companies based on skills--------------- */
-
-.hiring-companies-based-carousel-container {
-    width: 100%;
-    display: flex;
-    overflow-x: scroll;
-    gap: 15px;
-    scrollbar-width: none;
-  }
-
-  .hiring-companies-based-carousel-container::-webkit-scrollbar {
-    display: none;
-  }
-
-  .hiring-companies-based-carousel-card {
-    height: 20rem;
-    min-width: 220px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 2px 2px 2px 3px rgba(143, 138, 138, 0.219);
-    padding: 20px;
-    text-align: center;
-    position: relative;
-  }
-
-  .hiring-companies-based-company-logo {
-    max-width: 120px;
-    margin: 0 auto 10px;
-  }
-
-  .hiring-companies-based-company-name {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-
-  .hiring-companies-based-review-info {
-    font-size: 13px;
-    color: #555;
-    margin-bottom: 15px;
-  }
-
-  .hiring-companies-based-review-data {
-    font-size: 14px;
-    font-weight: 700;
-  }
-
-  .hiring-companies-based-view-all {
-    padding: 8px 16px;
-    color: #000000;
-    border: none;
-    border-radius: 4px;
-    border: 1px solid;
-    cursor: pointer;
-    font-size: 14px;
-    text-decoration: none;
-  }
-
-  .hiring-companies-based-view-all:hover {
-    color: #fff;
-    background-color: #007bff;
-  }
-
-  .hiring-companies-based-custom-scroll-container {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-  }
-
-  .hiring-companies-based-scroll-track {
-    position: absolute;
-    height: 4px;
-    width: 100%;
-    top: 19.8rem;
-    background: #c4bcbc;
-    border-radius: 10px;
-    opacity: 0.5;
-  }
-
-  .hiring-companies-based-scroll-thumb {
-    position: absolute;
-    height: 4px;
-    width: 500px;
-    background: rgb(0, 0, 253);
-    border-radius: 10px;
-  }
-
-  .top-hirings-cat-all-jobs {
-    background-color: rgba(165, 165, 214, 0.546);
-    color: rgb(0, 0, 0);
-    width: 8rem;
-    padding: 8px 5px;
-    border-radius: 10px;
-    border: none;
-    outline: none;
-  }
 
 
 
