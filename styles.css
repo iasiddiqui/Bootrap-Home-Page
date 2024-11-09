@@ -166,6 +166,7 @@
 .perfect-job-for-you-card-content h6 {
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
+    font-weight: bolder
     /* margin-top: 1.5rem; */
 }
 
@@ -244,19 +245,19 @@
 }
 
 .perfect-job-for-you-freelance-text {
-    color: #087e63;
+    color: #435652;
     margin-top: 1rem;
 
 }
 
 .perfect-job-for-you-full-time-text {
-    color: #047e55;
+    color: #eafff9;
     margin-top: 1rem;
 
 }
 
 .perfect-job-for-you-part-time-text {
-    color:#79FF8A ;
+    color:#f7ffd6 ;
     margin-top: 1rem;
 
 }
@@ -303,7 +304,7 @@
     margin-top: -1rem;
     border-radius: 50%;
     font-size: 3rem;
-    color: #6EF493;
+    color: #d2f8ff  ;
 }
 
 .perfect-job-for-you-full-time-icon {
@@ -312,7 +313,7 @@
     margin-top: -1rem;
     border-radius: 50%;
     font-size: 3rem;
-    color: #6EF4DC;
+    color: #d4fff2;
 }
 .perfect-job-for-you-part-time-icon {
     background-color: rgb(212, 246, 230);
@@ -320,7 +321,7 @@
     margin-top: -1rem;
     border-radius: 50%;
     font-size: 3rem;
-    color: #68A655;
+    color: #f7ffd6;
 }
 .perfect-job-for-you-work-from-home-icon {
     background-color: rgb(212, 246, 230);
