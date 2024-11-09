@@ -1,5 +1,5 @@
-.main{
-    /* background-color: rgba(205, 205, 206, 0.242); */
+.main {
+    background-color: rgba(205, 205, 206, 0.242);
     padding-bottom: 3rem;
 }
 
@@ -12,7 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .worksiy-home-search-container {
@@ -28,7 +28,8 @@
 }
 
 .worksiy-home-search-col-md-4.worksiy-home-search-heading-text {
-    font-size: 1rem; /* Reduced font size */
+    font-size: 1rem;
+    /* Reduced font size */
     margin: 0;
     font-weight: 500;
 }
@@ -45,7 +46,7 @@
     background-color: #fff;
     border-radius: 50px;
     padding: 10px 15px;
-    
+
 }
 
 .worksiy-home-search-input-group {
@@ -53,20 +54,22 @@
     display: flex;
     align-items: center;
     border-right: 1px solid #ddd;
-  gap: 0.5rem;
+    gap: 0.5rem;
 }
 
 .worksiy-home-search-input-group:last-child {
     border-right: none;
-  
+
 }
 
-.worksiy-home-search-form-select, .worksiy-home-search-form-control {
+.worksiy-home-search-form-select,
+.worksiy-home-search-form-control {
     border: none;
     box-shadow: none;
     color: #666;
     font-size: 16px;
-    outline: none; /* Remove the outline */
+    outline: none;
+    /* Remove the outline */
 }
 
 .worksiy-home-search-input-group-text {
@@ -74,7 +77,7 @@
     border: none;
     font-size: 18px;
     color: #666;
-    margin-left:1rem ;
+    margin-left: 1rem;
 }
 
 .worksiy-home-search-btn-search {
@@ -101,42 +104,45 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-  
-  /* Title Styling */
-  .perfect-job-for-you-category-container h4 {
+}
+
+/* Title Styling */
+.perfect-job-for-you-category-container h4 {
     font-weight: 600;
     letter-spacing: 1px;
     font-size: 30px;
-  }
-  
-  /* Flexbox for card items (single row) */
-  .perfect-job-for-you-category-cards {
+}
+
+/* Flexbox for card items (single row) */
+.perfect-job-for-you-category-cards {
     display: flex;
     justify-content: center;
-    gap: 1rem; /* Reduced gap for better spacing */
+    gap: 1rem;
+    /* Reduced gap for better spacing */
     position: relative;
     margin-top: 2rem;
-  }
-  
-  /* Individual Category Card */
-  .perfect-job-for-you-category-card {
-    width: 250px; /* Smaller width for compact design */
+    flex-wrap: wrap;
+}
+
+/* Individual Category Card */
+.perfect-job-for-you-category-card {
+    width: 250px;
+    /* Smaller width for compact design */
     height: 120px;
     position: relative;
     overflow: hidden;
     border-radius: 10px;
     transition: box-shadow 0.3s ease-in-out;
     cursor: pointer;
-  }
-  
-  /* Hover effect and card styling */
-  .perfect-job-for-you-category-card:hover {
+}
+
+/* Hover effect and card styling */
+.perfect-job-for-you-category-card:hover {
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
-  }
-  
-  /* Content inside the card (icon and title) */
-  .perfect-job-for-you-card-content {
+}
+
+/* Content inside the card (icon and title) */
+.perfect-job-for-you-card-content {
     height: 100px;
     width: 100%;
     padding: 1rem;
@@ -146,80 +152,190 @@
     justify-content: center;
     position: relative;
     z-index: 2;
-  }
-  
-  .perfect-job-for-you-card-content i {
-    font-size: 2.5rem; /* Slightly smaller icon size */
+}
+
+.perfect-job-for-you-card-content i {
+    font-size: 2.5rem;
+    /* Slightly smaller icon size */
     padding: 10px;
     border-radius: 50%;
-    background-color: inherit; /* Ensures icon background matches category color */
-  }
-  
-  .perfect-job-for-you-card-content h6 {
+    background-color: inherit;
+    /* Ensures icon background matches category color */
+}
+
+.perfect-job-for-you-card-content h6 {
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
-    margin-top: 0.5rem;
-  }
-  
-  /* Background style for the card */
-  .perfect-job-for-you-background-style {
+    /* margin-top: 1.5rem; */
+}
+
+/* Background style for the card */
+.perfect-job-for-you-background-style {
     position: absolute;
     width: 200px;
     height: 100px;
     padding: 1rem;
     z-index: -1;
-  }
-  
-  /* Circle styling for the background */
-  .perfect-job-for-you-circle {
+}
+
+/* Circle styling for the background */
+.perfect-job-for-you-circle {
     position: absolute;
     width: 50px;
     height: 50px;
     border-radius: 50%;
-  }
-  
-  /* Custom Colors */
-  .perfect-job-for-you-remote { background-color: rgb(209, 209, 250); }
-  .perfect-job-for-you-freelance { background-color: rgb(245, 242, 235); }
+}
+
+/* Custom Colors */
+/* .perfect-job-for-you-remote { background-color: rgb(209, 209, 250); } */
+/* .perfect-job-for-you-freelance { background-color: rgb(245, 242, 235); }
   .perfect-job-for-you-full-time { background-color: rgb(249, 236, 238); }
   .perfect-job-for-you-part-time { background-color: rgb(234, 249, 234); }
-  .perfect-job-for-you-work-from-home { background-color: rgb(232, 245, 239); }
-  
-  .perfect-job-for-you-remote-text { color: purple; }
-  .perfect-job-for-you-freelance-text { color: rgb(249, 107, 56); }
-  .perfect-job-for-you-full-time-text { color: orangered; }
-  .perfect-job-for-you-part-time-text { color: rgb(25, 101, 25); }
-  .perfect-job-for-you-work-from-home-text { color: rgb(5, 89, 102); }
-  
-  /* Circle Color Matching */
-  .perfect-job-for-you-remote-circle { background-color: rgb(231, 231, 248); }
-  .perfect-job-for-you-freelance-circle { background-color: rgb(244, 234, 217); }
-  .perfect-job-for-you-full-time-circle { background-color: rgb(253, 225, 230); }
-  .perfect-job-for-you-part-time-circle { background-color: rgb(216, 249, 216); }
-  .perfect-job-for-you-work-from-home-circle { background-color: rgb(212, 246, 230); }
-  
-  /* Fancy Icon Styling */
-  .perfect-job-for-you-remote-icon {
+  .perfect-job-for-you-work-from-home { background-color: rgb(232, 245, 239); } */
+
+.perfect-job-for-you-remote {
+    background-image: url('./assets/categories/card1.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.perfect-job-for-you-freelance {
+    background-image: url('./assets/categories/card2.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.perfect-job-for-you-full-time {
+    background-image: url('./assets/categories/card3.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.perfect-job-for-you-part-time {
+    background-image: url('./assets/categories/card4.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.perfect-job-for-you-work-from-home {
+    background-image: url('./assets/categories/card1.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.perfect-job-for-you-remote-text {
+    color: #236AA6;
+    margin-top: 1rem;
+}
+
+.perfect-job-for-you-freelance-text {
+    color: #087e63;
+    margin-top: 1rem;
+
+}
+
+.perfect-job-for-you-full-time-text {
+    color: #047e55;
+    margin-top: 1rem;
+
+}
+
+.perfect-job-for-you-part-time-text {
+    color:#79FF8A ;
+    margin-top: 1rem;
+
+}
+
+.perfect-job-for-you-work-from-home-text {
+    color: #236AA6;
+    margin-top: 1rem;
+
+}
+
+/* Circle Color Matching */
+.perfect-job-for-you-remote-circle {
     background-color: rgb(231, 231, 248);
-    padding: 15px;
-    border-radius: 50%;
-    font-size: 3rem;
-    color: purple;
-  }
-  
-  .perfect-job-for-you-work-from-home-icon {
+}
+
+.perfect-job-for-you-freelance-circle {
+    background-color: rgb(244, 234, 217);
+}
+
+.perfect-job-for-you-full-time-circle {
+    background-color: rgb(253, 225, 230);
+}
+
+.perfect-job-for-you-part-time-circle {
+    background-color: rgb(216, 249, 216);
+}
+
+.perfect-job-for-you-work-from-home-circle {
     background-color: rgb(212, 246, 230);
-    padding: 15px;
+}
+
+/* Fancy Icon Styling */
+.perfect-job-for-you-remote-icon {
+    background-color: rgb(231, 231, 248);
+    /* padding: 15px; */
+    margin-top: -1rem;
     border-radius: 50%;
     font-size: 3rem;
-    color: rgb(5, 89, 102);
-  }
+    color: #A7C8E1;
+}
+.perfect-job-for-you-freelance-icon {
+    background-color: rgb(231, 231, 248);
+    /* padding: 15px; */
+    margin-top: -1rem;
+    border-radius: 50%;
+    font-size: 3rem;
+    color: #6EF493;
+}
+
+.perfect-job-for-you-full-time-icon {
+    background-color: rgb(212, 246, 230);
+    /* padding: 15px; */
+    margin-top: -1rem;
+    border-radius: 50%;
+    font-size: 3rem;
+    color: #6EF4DC;
+}
+.perfect-job-for-you-part-time-icon {
+    background-color: rgb(212, 246, 230);
+    /* padding: 15px; */
+    margin-top: -1rem;
+    border-radius: 50%;
+    font-size: 3rem;
+    color: #68A655;
+}
+.perfect-job-for-you-work-from-home-icon {
+    background-color: rgb(212, 246, 230);
+    /* padding: 15px; */
+    margin-top: -1rem;
+    border-radius: 50%;
+    font-size: 3rem;
+    color: #A7C8E1;
+}
 
 
 
 
-  
-  /* -----------------------featured jobs-------------------------------------------- */
+
+/* -----------------------featured jobs-------------------------------------------- */
 
 /* Scroll Container */
 /* .featured-jobs-workisy-scroll-container {
@@ -233,17 +349,17 @@
     position: relative;
     scroll-behavior: smooth; 
   } */
-  
-  /* Image Styling */
-  /* .featured-jobs-workisy-scroll-container img {
+
+/* Image Styling */
+/* .featured-jobs-workisy-scroll-container img {
     height: 40px;
     width: 150px;
     border-radius: 10px;
     object-fit: cover;
   }
    */
-  /* Scroll Button Styling */
-  /* .featured-jobs-workisy-scroll-btn {
+/* Scroll Button Styling */
+/* .featured-jobs-workisy-scroll-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -260,9 +376,9 @@
   .featured-jobs-workisy-scroll-btn i {
     font-size: 16px;
   } */
-  
-  /* Position of Left and Right Buttons */
-  /* .featured-jobs-workisy-left {
+
+/* Position of Left and Right Buttons */
+/* .featured-jobs-workisy-left {
     left: 8%;
   }
   
@@ -275,42 +391,49 @@
 
 
 
-  
 
-  /* ===============================popular categories========================================= */
 
-  .popularcategories-category-card {
+/* ===============================popular categories========================================= */
+
+.popularcategories-category-card {
     background-color: white;
     border: 1px solid #dfdddd;
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
-    color: #333; /* Dark text for better visibility */
-  }
-  
-  .popularcategories-category-card:hover {
+    color: #333;
+    /* Dark text for better visibility */
+}
+
+.popularcategories-category-card:hover {
     box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
-    transform: translateY(-5px); /* Add slight lift on hover */
-    background-color: #f8f9fa; /* Bright background on hover */
-  }
-  
-  .popularcategories-icon-wrapper {
-    width: 45px; /* Slightly larger icon wrapper */
+    transform: translateY(-5px);
+    /* Add slight lift on hover */
+    background-color: #f8f9fa;
+    /* Bright background on hover */
+}
+
+.popularcategories-icon-wrapper {
+    width: 45px;
+    /* Slightly larger icon wrapper */
     height: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-  }
-  
-  .popularcategories-category-title {
-    font-size: 14px; /* Slightly larger font */
-    font-weight: 500; /* Medium weight for better visibility */
-    margin: 0;
-    color: #222; /* Darker text */
-  }
-  
+}
 
-  /* ------------------------------------Top hiring companies based on skills--------------- */
+.popularcategories-category-title {
+    font-size: 14px;
+    /* Slightly larger font */
+    font-weight: 500;
+    /* Medium weight for better visibility */
+    margin: 0;
+    color: #222;
+    /* Darker text */
+}
+
+
+/* ------------------------------------Top hiring companies based on skills--------------- */
 
 .hiring-companies-based-carousel-container {
     width: 100%;
@@ -318,13 +441,13 @@
     overflow-x: scroll;
     gap: 15px;
     scrollbar-width: none;
-  }
+}
 
-  .hiring-companies-based-carousel-container::-webkit-scrollbar {
+.hiring-companies-based-carousel-container::-webkit-scrollbar {
     display: none;
-  }
+}
 
-  .hiring-companies-based-carousel-card {
+.hiring-companies-based-carousel-card {
     height: 20rem;
     min-width: 220px;
     background-color: #ffffff;
@@ -333,32 +456,32 @@
     padding: 20px;
     text-align: center;
     position: relative;
-  }
+}
 
-  .hiring-companies-based-company-logo {
-    max-width:5rem;
+.hiring-companies-based-company-logo {
+    max-width: 5rem;
     margin: 0 auto 10px;
     border-radius: 0.2rem;
-  }
+}
 
-  .hiring-companies-based-company-name {
+.hiring-companies-based-company-name {
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 5px;
-  }
+}
 
-  .hiring-companies-based-review-info {
+.hiring-companies-based-review-info {
     font-size: 13px;
     color: #555;
     margin-bottom: 15px;
-  }
+}
 
-  .hiring-companies-based-review-data {
+.hiring-companies-based-review-data {
     font-size: 14px;
     font-weight: 700;
-  }
+}
 
-  .hiring-companies-based-view-all {
+.hiring-companies-based-view-all {
     padding: 8px 16px;
     color: #000000;
     border: none;
@@ -367,20 +490,20 @@
     cursor: pointer;
     font-size: 14px;
     text-decoration: none;
-  }
+}
 
-  .hiring-companies-based-view-all:hover {
+.hiring-companies-based-view-all:hover {
     color: #fff;
     background-color: #007bff;
-  }
+}
 
-  .hiring-companies-based-custom-scroll-container {
+.hiring-companies-based-custom-scroll-container {
     position: relative;
     overflow: hidden;
     width: 100%;
-  }
+}
 
-  .hiring-companies-based-scroll-track {
+.hiring-companies-based-scroll-track {
     position: absolute;
     height: 4px;
     width: 100%;
@@ -388,17 +511,17 @@
     background: #c4bcbc;
     border-radius: 10px;
     opacity: 0.5;
-  }
+}
 
-  .hiring-companies-based-scroll-thumb {
+.hiring-companies-based-scroll-thumb {
     position: absolute;
     height: 4px;
     width: 500px;
     background: rgb(0, 0, 253);
     border-radius: 10px;
-  }
+}
 
-  .top-hirings-cat-all-jobs {
+.top-hirings-cat-all-jobs {
     background-color: rgba(165, 165, 214, 0.546);
     color: rgb(0, 0, 0);
     width: 8rem;
@@ -406,7 +529,7 @@
     border-radius: 10px;
     border: none;
     outline: none;
-  }
+}
 
 
 
@@ -419,7 +542,7 @@
 
 
 .container {
-    width:100%;
+    width: 100%;
     max-width: 80rem;
 }
 
@@ -429,7 +552,7 @@
     color: orange;
 }
 
-.btn{
+.btn {
     border: 1px solid;
     border-radius: 20px;
 }
@@ -442,16 +565,16 @@
 .scroll-container {
     display: flex;
     overflow-x: auto;
-    scrollbar-width: none; 
+    scrollbar-width: none;
 }
 
-.category-button{
+.category-button {
     margin: 0.5rem;
-    scrollbar-width: none; 
+    scrollbar-width: none;
 }
 
 .scroll-container::-webkit-scrollbar {
-    display: none; 
+    display: none;
 }
 
 .custom-scrollbar {
@@ -480,7 +603,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
-    width: 360px;
+    /* width: 360px; */
     flex-shrink: 0;
     transform: scale(.95);
     transition: transform .2s, box-shadow .2s;
@@ -492,7 +615,7 @@
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-.btn-card{
+.btn-card {
     border: none;
 }
 
@@ -518,22 +641,22 @@
     color: #6c757d;
 }
 
- /* Find Job Vacancies By------------------------------------------------------------------------ */
+/* Find Job Vacancies By------------------------------------------------------------------------ */
 
 
 
- .nav-tabs .nav-link {
+.nav-tabs .nav-link {
     font-family: "Inter", sans-serif;
     font-weight: 600;
     text-transform: capitalize;
     position: relative;
     color: gray;
-    transition: color 0.3s,  0.3s;
+    transition: color 0.3s, 0.3s;
 }
 
 
 .nav-tabs .nav-link:hover {
-    color: rgb(247, 247, 247); 
+    color: rgb(247, 247, 247);
     background-color: rgb(0, 123, 255);
 }
 
@@ -555,57 +678,60 @@
 }
 
 
-        .tab-link {
-            text-decoration: none;
-            color: black;
-            border: 1px solid gray;
-            font-family: "Inter", sans-serif;
-            border-radius: 20px;
-            padding: 0.6rem;
-            font-size: 12px;
-            transition: all 0.5s;
-            cursor: pointer;
-        }
-        .tab-link:hover {
-            background-color: rgb(24, 121, 24);
-            color: white;
-            text-decoration: none;  /* Ensure no underline on hover */
-        }
+.tab-link {
+    text-decoration: none;
+    color: black;
+    border: 1px solid gray;
+    font-family: "Inter", sans-serif;
+    border-radius: 20px;
+    padding: 0.6rem;
+    font-size: 12px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
 
-        .view-all-btn {
-            text-decoration: none;
-            color: rgb(0, 123, 255);
-            border: 1px solid rgb(0, 123, 255);
-            padding: 0.3rem;
-            border-radius: 20px;
-            width: 10rem;
-            text-align: center;
-            font-weight: 200;
-            font-family: "Inter", sans-serif;
-            transition: all 0.7s;
-            cursor: pointer;
-        }
-        .view-all-btn:hover {
-            background-color: rgb(0, 123, 255);
-            color: white;
-            text-decoration: none;  
-        }
+.tab-link:hover {
+    background-color: rgb(24, 121, 24);
+    color: white;
+    text-decoration: none;
+    /* Ensure no underline on hover */
+}
 
-        .tab-content {
-            padding: 1.5rem;
-            background-color: white;
-            border-radius: 20px;
-            border: 1px solid rgb(204, 204, 204);
-            margin-top: 1.5rem;
-        }
+.view-all-btn {
+    text-decoration: none;
+    color: rgb(0, 123, 255);
+    border: 1px solid rgb(0, 123, 255);
+    padding: 0.3rem;
+    border-radius: 20px;
+    width: 10rem;
+    text-align: center;
+    font-weight: 200;
+    font-family: "Inter", sans-serif;
+    transition: all 0.7s;
+    cursor: pointer;
+}
 
-        .heading-job-vacancies {
-            font-family: "Inter", sans-serif;
-            font-weight: 600;
-            font-size: 1.7rem;
-            color: #333;
-            margin-bottom: 1rem;
-        }
+.view-all-btn:hover {
+    background-color: rgb(0, 123, 255);
+    color: white;
+    text-decoration: none;
+}
+
+.tab-content {
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid rgb(204, 204, 204);
+    margin-top: 1.5rem;
+}
+
+.heading-job-vacancies {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 1.7rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
 
 
 
@@ -677,7 +803,7 @@
 #footer {
     width: 100%;
     margin-top: 2rem;
-   
+
 }
 
 
@@ -688,13 +814,15 @@
     flex-wrap: wrap;
     gap: 2rem;
     background-color: white;
-    width: 100%; /* Ensure the footer content takes full width */
+    width: 100%;
+    /* Ensure the footer content takes full width */
 }
 
 /* Company sections */
 .company {
     max-width: 200px;
-    flex: 1 1 200px; /* Allow the company section to take full width if needed */
+    flex: 1 1 200px;
+    /* Allow the company section to take full width if needed */
 }
 
 .company h6 {
@@ -750,7 +878,8 @@
     background-color: #f1f1f1;
     align-items: center;
     gap: 2rem;
-    width: 100%; /* Ensure the bottom section also spans full width */
+    width: 100%;
+    /* Ensure the bottom section also spans full width */
 }
 
 /* Logos in footer bottom */
@@ -795,26 +924,34 @@
     0% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(-100%);
     }
 }
 
-/* Media Queries for responsiveness */
-@media (max-width: 768px) {
+/* Media Queries for Responsiveness */
+
+/* Mobile and Small Screens */
+/* Mobile and Small Screens */
+@media (max-width: 480px) {
+
+    /* Footer adjustments */
     .footer-content {
-        flex-direction: column; /* Stack footer content on smaller screens */
+        flex-direction: column;
         align-items: center;
     }
 
-    .company, .follow-us {
+    .company,
+    .follow-us {
         max-width: 100%;
-        text-align: center; /* Center align content on smaller screens */
+        text-align: center;
     }
 
     .footer-bottom {
         flex-direction: column;
         text-align: center;
+        padding: 1rem 0;
     }
 
     .logos-container {
@@ -823,6 +960,309 @@
     }
 
     .logo-img {
-        margin-bottom: 1rem; /* Add space between logos for smaller screens */
+        margin-bottom: 0.8rem;
+    }
+
+    /* "Find the perfect job" section */
+    .perfect-job-for-you-category-cards {
+        flex-wrap: wrap;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .perfect-job-for-you-category-card {
+        width: 95%;
+        /* Full width for smaller screens */
+    }
+
+    .perfect-job-for-you-category-container h4 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    /* Featured jobs */
+    .featured-jobs-workisy-scroll-container {
+        overflow-x: scroll;
+    }
+
+    /* Popular categories */
+    .popularcategories-category-card {
+        flex-direction: column;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    /* "Top hiring companies" section */
+    .hiring-companies-based-carousel-container {
+        gap: 8px;
+    }
+
+    /* Scroll thumb */
+    .hiring-companies-based-scroll-thumb {
+        width: 80px;
+    }
+
+    /* Latest jobs and internships */
+    .scroll-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Adjust search section padding */
+    .worksiy-home-search-section {
+        padding: 30px;
+    }
+
+    .worksiy-home-search-btn-search {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .worksiy-home-search-search-bar {
+        max-width: 100%;
+        /* Full width on smaller screens */
+        padding: 8px 10px;
+        /* Reduced padding */
+        border-radius: 30px;
+        /* Smaller border radius */
+    }
+
+    .d-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .premium-image {
+        max-width: 100px;
+        /* Adjust image size for smaller screens */
+        margin-bottom: 1rem;
+    }
+
+    h5 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .services-container {
+        gap: 0.5rem;
+    }
+
+    .service-btn {
+        padding: 0.4rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .learn-more-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .text-center-small {
+        font-size: 0.9rem;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        /* Stack footer content on smaller screens */
+        align-items: center;
+    }
+
+    .company,
+    .follow-us {
+        max-width: 100%;
+        text-align: center;
+        /* Center align content on smaller screens */
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* .logos-container {
+        flex-direction: column;
+        align-items: center;
+    } */
+    .logo-img {
+        margin-bottom: 1rem;
+        /* Add space between logos for smaller screens */
+    }
+
+    /* "Find the perfect job" section */
+    .perfect-job-for-you-category-cards {
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        /* Adjust gap for better spacing on mobile */
+        align-items: center;
+    }
+
+    .perfect-job-for-you-category-card {
+        width: 90%;
+        /* Adjust width for smaller screens */
+    }
+
+    .perfect-job-for-you-category-container h4 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    /* Featured jobs */
+    .featured-jobs-workisy-scroll-container {
+        overflow-x: scroll;
+        /* Enable horizontal scrolling */
+    }
+
+    /* Popular categories */
+    .popularcategories-category-card {
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+        /* Center cards on smaller screens */
+    }
+
+    /* "Top hiring companies" section */
+    .hiring-companies-based-carousel-container {
+        gap: 10px;
+        /* Reduce gap for better fit on mobile */
+    }
+
+
+    /* Scroll thumb */
+    .hiring-companies-based-scroll-thumb {
+        width: 100px;
+        /* Shorter width for smaller screens */
+    }
+
+    /* Latest jobs and internships */
+    .scroll-container {
+        /* flex-direction: column; */
+        align-items: center;
+    }
+}
+
+/* Tablet adjustments */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .worksiy-home-search-search-bar {
+        max-width: 90%;
+        /* Slightly less than full width on tablet */
+        padding: 10px 12px;
+        /* Moderate padding for tablets */
+    }
+
+    h5 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    .premium-image {
+        max-width: 120px;
+    }
+
+    .service-btn {
+        padding: 0.5rem 1.2rem;
+    }
+
+    .learn-more-btn {
+        padding: 0.5rem 1.2rem;
+    }
+
+    .worksiy-home-search-section {
+        padding: 50px;
+    }
+
+    .worksiy-home-search-btn-search {
+        padding: 9px 25px;
+        font-size: 15px;
+    }
+
+    .perfect-job-for-you-category-container h4 {
+        font-size: 2rem;
+    }
+
+    .perfect-job-for-you-category-card {
+        width: 200px;
+        /* Compact width for tablet */
+    }
+
+    .hiring-companies-based-carousel-card {
+        min-width: 180px;
+    }
+}
+
+/* Larger Tablet and Small Desktop Adjustments */
+@media (min-width: 1024px) and (max-width: 1200px) {
+    .worksiy-home-search-search-bar {
+        max-width: 80%;
+        /* Reduced width for mid-sized screens */
+        padding: 12px 15px;
+    }
+
+    h5 {
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    .premium-image {
+        max-width: 140px;
+    }
+
+    .worksiy-home-search-section {
+        padding: 55px;
+    }
+
+    .perfect-job-for-you-category-container h4 {
+        font-size: 2.2rem;
+    }
+
+    .perfect-job-for-you-category-card {
+        width: 215px;
+        /* Compact width for mid-sized screens */
+    }
+
+    .hiring-companies-based-carousel-card {
+        min-width: 190px;
+    }
+}
+
+
+/* Full Desktop Adjustments */
+@media (min-width: 1200px) {
+    .worksiy-home-search-search-bar {
+        max-width: 1000px;
+        /* Restore max-width on larger screens */
+        padding: 15px 20px;
+        /* Ample padding for large screens */
+    }
+
+    .worksiy-home-search-section {
+        padding: 70px;
+    }
+
+    .perfect-job-for-you-category-container h4 {
+        font-size: 2.5rem;
+    }
+
+    .perfect-job-for-you-category-card {
+        width: 250px;
+        /* Larger width for desktop */
+    }
+
+    .hiring-companies-based-carousel-card {
+        min-width: 220px;
     }
 }
