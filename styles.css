@@ -4,15 +4,13 @@
 }
 
 
-/* home serch bar-------------------------------------------- */
-.worksiy-home-search-section {
+/* home serch bar-------------------------------------------- */.worksiy-home-search-section {
     background: linear-gradient(to right, #0033cc, #6699ff);
     padding: 60px;
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .worksiy-home-search-container {
@@ -28,8 +26,7 @@
 }
 
 .worksiy-home-search-col-md-4.worksiy-home-search-heading-text {
-    font-size: 1rem;
-    /* Reduced font size */
+    font-size: 1.5rem;
     margin: 0;
     font-weight: 500;
 }
@@ -46,7 +43,7 @@
     background-color: #fff;
     border-radius: 50px;
     padding: 10px 15px;
-
+    flex-wrap: wrap; /* Enables wrapping for smaller screens */
 }
 
 .worksiy-home-search-input-group {
@@ -59,7 +56,6 @@
 
 .worksiy-home-search-input-group:last-child {
     border-right: none;
-
 }
 
 .worksiy-home-search-form-select,
@@ -69,7 +65,6 @@
     color: #666;
     font-size: 16px;
     outline: none;
-    /* Remove the outline */
 }
 
 .worksiy-home-search-input-group-text {
@@ -93,6 +88,78 @@
 .worksiy-home-search-btn-search:hover {
     background-color: #002299;
 }
+
+
+@media (max-width: 768px) {
+    .worksiy-home-search-section {
+        padding: 30px;
+        
+    }
+
+    .worksiy-home-search-col-md-4.worksiy-home-search-heading-text {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .worksiy-home-search-row {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .worksiy-home-search-search-bar {
+        padding: 8px 12px;
+        flex-direction: column; /* Stack search inputs vertically */
+
+    }
+
+    .worksiy-home-search-btn-search {
+        width: 100%; /* Full width for better touchability */
+        margin: 1rem 0 0 0;
+    }
+}
+
+@media (max-width: 580px) {
+
+    .worksiy-home-search-search-bar{
+       border-radius: 0;
+       width: 100%;
+       max-width: 90%;
+       margin-left: 1.3rem;
+       
+       
+
+       
+    }
+    .worksiy-home-search-section {
+        padding: 20px;
+    }
+
+    .worksiy-home-search-col-md-4.worksiy-home-search-heading-text {
+        font-size: 1rem;
+    }
+
+    .worksiy-home-search-row {
+        gap: 0.5rem;
+    }
+
+    .worksiy-home-search-input-group {
+        border-right: none; /* Remove borders for clean mobile look */
+        padding: 5px;
+    }
+
+    .worksiy-home-search-btn-search {
+        font-size: 14px;
+        padding: 8px 20px;
+       
+        
+        
+    }
+    .worksiy-home-search-col-md-8{
+        font-size: 1px;
+    
+    }
+}
+
 
 
 /* --------------------------Find the perfect job for YOU----------------------------- */
@@ -335,6 +402,41 @@
 
 
 
+@media (max-width: 768px) {
+    .perfect-job-for-you-category-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .perfect-job-for-you-category-card {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .perfect-job-for-you-card-content i {
+        font-size: 1.8rem;
+    }
+
+    .perfect-job-for-you-category-container h4 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .perfect-job-for-you-category-container h4 {
+        font-size: 20px;
+    }
+
+    .perfect-job-for-you-card-content h6 {
+        font-size: 0.9rem;
+    }
+
+    .perfect-job-for-you-card-content i {
+        font-size: 1.5rem;
+    }
+}
+
+
+
 
 /* -----------------------featured jobs-------------------------------------------- */
 
@@ -449,29 +551,45 @@
 }
 
 .hiring-companies-based-carousel-card {
-    height: 10rem;
-    min-width: 220px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 2px 2px 2px 3px rgba(143, 138, 138, 0.219);
-    padding: 20px;
+    flex: 0 0 250px;
     text-align: center;
-    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.image-container {
+    width: 5rem;   /* Match the original image size */
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* overflow: hidden; */
+    margin-left: 3rem;
 }
 
 .hiring-companies-based-company-logo {
-    width: 5rem;
+    max-width: 100%; /* Constrain image within container */
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    
+}
 
+/* .hiring-companies-based-company-logo {
+    width: 5rem;
     margin: 0 auto 10px;
     border-radius: 0.2rem;
-}
+    object-fit: cover;
+} */
 
 .hiring-companies-based-company-name {
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 5px;
+    text-transform: uppercase;
 }
-
 .hiring-companies-based-review-info {
     font-size: 13px;
     color: #555;
@@ -494,10 +612,10 @@
     text-decoration: none;
 } */
 
-.hiring-companies-based-view-all:hover {
+/* .hiring-companies-based-view-all:hover {
     color: #fff;
     background-color: #007bff;
-}
+} */
 
 .hiring-companies-based-custom-scroll-container {
     position: relative;
@@ -533,6 +651,32 @@
     outline: none;
 }
 
+@media (max-width: 1200px) {
+    .hiring-companies-based-carousel-card {
+      flex: 0 0 200px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hiring-companies-based-carousel-card {
+      flex: 0 0 150px;
+    }
+  
+    .hiring-companies-based-custom-scroll-container {
+      overflow-x: scroll;
+      -webkit-overflow-scrolling: touch;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hiring-companies-based-carousel-card {
+      flex: 0 0 120px;
+    }
+  
+    .hiring-companies-based-company-name {
+      font-size: 0.9rem;
+    }
+  }
 
 
 
@@ -540,28 +684,17 @@
 
 
 
-/* <!-- Latest jobs on Workisy and interships start -------------------------> */
 
+/* <!------- CSS of -->> Latest jobs on Workisy , full time,freelance,parttime,workfrom home -------> */
 
 .container {
     width: 100%;
     max-width: 80rem;
 }
 
-.popular-categories {
-    font-size: 1.3rem;
-    font-weight: 500;
-    color: orange;
-}
-
 .btn {
     border: 1px solid;
     border-radius: 20px;
-}
-
-.category-button.active {
-    background-color: #096eb6;
-    color: white;
 }
 
 .scroll-container {
@@ -573,6 +706,11 @@
 .category-button {
     margin: 0.5rem;
     scrollbar-width: none;
+}
+
+.category-button:hover{
+    background-color:rgb(0, 123, 255);
+    color: rgb(255, 255, 255);
 }
 
 .scroll-container::-webkit-scrollbar {
@@ -605,7 +743,6 @@
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
-    /* width: 360px; */
     flex-shrink: 0;
     transform: scale(.95);
     transition: transform .2s, box-shadow .2s;
@@ -618,6 +755,7 @@
 }
 
 .btn-card {
+    margin:10px;
     border: none;
 }
 
@@ -641,6 +779,22 @@
 
 .salary-info span {
     color: #6c757d;
+}
+@media (max-width:576px) {
+    .card {
+        width:90vw;
+    }
+
+    .buttons-of-latest-on-workisy{
+      margin-left:3vw;
+    }
+    
+    .category-button {
+        margin: 0%;
+        margin-top:1.5vw;
+        font-size: 10px;
+        font-weight: 600;
+    }
 }
 
 /* Find Job Vacancies By------------------------------------------------------------------------ */
@@ -779,6 +933,89 @@
     color: #096eb6;
 }
 
+/* .learn-more-btn {
+    font-size: 1rem;
+    text-decoration: none;
+    background-color: #096eb6;
+    color: white;
+    padding: 0.7rem;
+    border-radius: 20px;
+    width: 120px;
+} */
+
+.text-center-small {
+    font-size: 0.7rem;
+    color: rgb(65, 64, 64);
+    /* margin-left: 60.5rem; */
+}
+
+.action-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align items to the far right */
+    margin-top: 1rem;
+}
+
+.learn-more-btn {
+    font-size: 1rem;
+    text-decoration: none;
+    background-color: #096eb6;
+    color: white;
+    margin-top: -4.5rem;
+    padding: 0.7rem;
+    border-radius: 20px;
+    width: 120px;
+    text-align: center
+    ;
+}
+
+.text-center-small {
+    font-size: 0.7rem;
+    color: rgb(65, 64, 64);
+    margin-top: 0.5rem; 
+    text-align: center !important;  
+}
+
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    .d-flex {
+        flex-direction: column; /* Stack image and text on small screens */
+    }
+    .premium-image {
+        margin: 0 auto; /* Center image on small screens */
+    }
+}
+
+.services-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.service-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    border: 1px solid rgb(181, 181, 181);
+    border-radius: 20px;
+    padding: 0.3rem;
+    width: auto;
+    justify-content: center;
+}
+
+.service-btn .icon {
+    font-size: 0.9rem;
+    color: #096eb6;
+}
+
+.action-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align items to the far right */
+    margin-top: 1rem;
+}
+
 .learn-more-btn {
     font-size: 1rem;
     text-decoration: none;
@@ -787,12 +1024,31 @@
     padding: 0.7rem;
     border-radius: 20px;
     width: 120px;
+    text-align: center;
+}
+
+/* Responsive layout for .action-row on smaller screens */
+@media (max-width: 768px) {
+    .action-row {
+        align-items: center; /* Center align items for smaller screens */
+    }
+    .learn-more-btn {
+        margin-top: 1rem; /* Adjust spacing above button */
+    }
 }
 
 .text-center-small {
     font-size: 0.7rem;
     color: rgb(65, 64, 64);
-    /* margin-left: 60.5rem; */
+    margin-top: 0.5rem;
+    text-align: center;  
+}
+
+/* Additional adjustments for very small screens */
+@media (max-width: 480px) {
+    .learn-more-btn {
+        width: 100%; /* Full width button on very small screens */
+    }
 }
 
 
@@ -801,15 +1057,12 @@
 /* footer css */
 
 
-
-
 #footer {
     width: 100%;
     margin-top: 2rem;
-
 }
 
-
+/* Main Footer Content */
 .footer-content {
     display: flex;
     justify-content: space-evenly;
@@ -818,14 +1071,11 @@
     gap: 2rem;
     background-color: white;
     width: 100%;
-    /* Ensure the footer content takes full width */
 }
 
-/* Company sections */
 .company {
     max-width: 200px;
     flex: 1 1 200px;
-    /* Allow the company section to take full width if needed */
 }
 
 .company h6 {
@@ -843,7 +1093,7 @@
     font-size: 0.9rem;
 }
 
-/* Social icons */
+/* Social Media Icons */
 .follow-us {
     text-align: center;
 }
@@ -867,13 +1117,12 @@
     font-size: 1.2rem;
 }
 
-/* App store image */
 .app-store img {
     width: 150px;
     height: 100px;
 }
 
-/* Footer bottom section */
+/* Footer Bottom Section */
 .footer-bottom {
     display: flex;
     justify-content: space-between;
@@ -882,14 +1131,15 @@
     align-items: center;
     gap: 2rem;
     width: 100%;
-    /* Ensure the bottom section also spans full width */
+    flex-wrap: wrap;
 }
 
-/* Logos in footer bottom */
+/* Logos */
 .business-logos {
     display: flex;
     gap: 1rem;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .business-logos p {
@@ -910,11 +1160,12 @@
     animation: moveImages 2s linear infinite;
 }
 
-/* Logo section */
+/* Logo Section */
 .footer-logo {
     display: flex;
     gap: 1rem;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .footer-logo .logo {
@@ -922,350 +1173,74 @@
     height: 50px;
 }
 
-/* Keyframe animation for moving logos */
+.footer-text p {
+    margin: 0;
+}
+
+/* Keyframe Animation for Moving Logos */
 @keyframes moveImages {
     0% {
         transform: translateX(0);
     }
-
     100% {
         transform: translateX(-100%);
     }
 }
 
 /* Media Queries for Responsiveness */
-
-/* Mobile and Small Screens */
-/* Mobile and Small Screens */
-@media (max-width: 480px) {
-
-    /* Footer adjustments */
+@media (max-width: 768px) {
     .footer-content {
         flex-direction: column;
         align-items: center;
     }
 
-    .company,
-    .follow-us {
+    .company {
         max-width: 100%;
         text-align: center;
     }
 
     .footer-bottom {
         flex-direction: column;
+        align-items: center;
         text-align: center;
-        padding: 1rem 0;
+    }
+
+    .business-logos {
+        flex-direction: column;
+        gap: 1rem;
     }
 
     .logos-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .logo-img {
-        margin-bottom: 0.8rem;
-    }
-
-    /* "Find the perfect job" section */
-    .perfect-job-for-you-category-cards {
         flex-wrap: wrap;
-        gap: 1rem;
-        align-items: center;
-    }
-
-    .perfect-job-for-you-category-card {
-        width: 95%;
-        /* Full width for smaller screens */
-    }
-
-    .perfect-job-for-you-category-container h4 {
-        font-size: 1.2rem;
-        text-align: center;
-    }
-
-    /* Featured jobs */
-    .featured-jobs-workisy-scroll-container {
-        overflow-x: scroll;
-    }
-
-    /* Popular categories */
-    .popularcategories-category-card {
-        flex-direction: column;
-        width: 95%;
-        margin: 0 auto;
-    }
-
-    /* "Top hiring companies" section */
-    .hiring-companies-based-carousel-container {
-        gap: 8px;
-    }
-
-    /* Scroll thumb */
-    .hiring-companies-based-scroll-thumb {
-        width: 80px;
-    }
-
-    /* Latest jobs and internships */
-    .scroll-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /* Adjust search section padding */
-    .worksiy-home-search-section {
-        padding: 30px;
-    }
-
-    .worksiy-home-search-btn-search {
-        padding: 8px 20px;
-        font-size: 14px;
+        justify-content: center;
     }
 }
 
-
-@media (max-width: 768px) {
-    .worksiy-home-search-search-bar {
-        max-width: 100%;
-        /* Full width on smaller screens */
-        padding: 8px 10px;
-        /* Reduced padding */
-        border-radius: 30px;
-        /* Smaller border radius */
-    }
-
-    .d-flex {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .premium-image {
-        max-width: 100px;
-        /* Adjust image size for smaller screens */
-        margin-bottom: 1rem;
-    }
-
-    h5 {
-        font-size: 1.2rem;
-        text-align: center;
-    }
-
-    p {
+@media (max-width: 576px) {
+    .icon-btn i {
         font-size: 1rem;
-        text-align: center;
     }
 
-    .services-container {
-        gap: 0.5rem;
+    .company h6 {
+        font-size: 1rem;
     }
 
-    .service-btn {
-        padding: 0.4rem 1rem;
-        font-size: 0.9rem;
+    .company ul li {
+        font-size: 0.8rem;
     }
 
-    .learn-more-btn {
-        width: 100%;
-        text-align: center;
+    .app-store img {
+        width: 120px;
+        height: 80px;
     }
 
-    .text-center-small {
-        font-size: 0.9rem;
-    }
-
-    .footer-content {
-        flex-direction: column;
-        /* Stack footer content on smaller screens */
-        align-items: center;
-    }
-
-    .company,
-    .follow-us {
-        max-width: 100%;
-        text-align: center;
-        /* Center align content on smaller screens */
-    }
-
-    .footer-bottom {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    /* .logos-container {
-        flex-direction: column;
-        align-items: center;
-    } */
     .logo-img {
-        margin-bottom: 1rem;
-        /* Add space between logos for smaller screens */
+        width: 80px;
+        height: 30px;
     }
 
-    /* "Find the perfect job" section */
-    .perfect-job-for-you-category-cards {
-        /* flex-direction: column; */
-        flex-wrap: wrap;
-        gap: 1.5rem;
-        /* Adjust gap for better spacing on mobile */
-        align-items: center;
-    }
-
-    .perfect-job-for-you-category-card {
-        width: 90%;
-        /* Adjust width for smaller screens */
-    }
-
-    .perfect-job-for-you-category-container h4 {
-        font-size: 1.5rem;
-        text-align: center;
-    }
-
-    /* Featured jobs */
-    .featured-jobs-workisy-scroll-container {
-        overflow-x: scroll;
-        /* Enable horizontal scrolling */
-    }
-
-    /* Popular categories */
-    .popularcategories-category-card {
-        flex-direction: column;
-        width: 90%;
-        margin: 0 auto;
-        /* Center cards on smaller screens */
-    }
-
-    /* "Top hiring companies" section */
-    .hiring-companies-based-carousel-container {
-        gap: 10px;
-        /* Reduce gap for better fit on mobile */
-    }
-
-
-    /* Scroll thumb */
-    .hiring-companies-based-scroll-thumb {
-        width: 100px;
-        /* Shorter width for smaller screens */
-    }
-
-    /* Latest jobs and internships */
-    .scroll-container {
-        /* flex-direction: column; */
-        align-items: center;
-    }
-}
-
-/* Tablet adjustments */
-@media (min-width: 768px) and (max-width: 1024px) {
-    .worksiy-home-search-search-bar {
-        max-width: 90%;
-        /* Slightly less than full width on tablet */
-        padding: 10px 12px;
-        /* Moderate padding for tablets */
-    }
-
-    h5 {
-        font-size: 1.4rem;
-    }
-
-    p {
-        font-size: 1.1rem;
-    }
-
-    .premium-image {
-        max-width: 120px;
-    }
-
-    .service-btn {
-        padding: 0.5rem 1.2rem;
-    }
-
-    .learn-more-btn {
-        padding: 0.5rem 1.2rem;
-    }
-
-    .worksiy-home-search-section {
-        padding: 50px;
-    }
-
-    .worksiy-home-search-btn-search {
-        padding: 9px 25px;
-        font-size: 15px;
-    }
-
-    .perfect-job-for-you-category-container h4 {
-        font-size: 2rem;
-    }
-
-    .perfect-job-for-you-category-card {
-        width: 200px;
-        /* Compact width for tablet */
-    }
-
-    .hiring-companies-based-carousel-card {
-        min-width: 180px;
-    }
-}
-
-/* Larger Tablet and Small Desktop Adjustments */
-@media (min-width: 1024px) and (max-width: 1200px) {
-    .worksiy-home-search-search-bar {
-        max-width: 80%;
-        /* Reduced width for mid-sized screens */
-        padding: 12px 15px;
-    }
-
-    h5 {
-        font-size: 1.6rem;
-    }
-
-    p {
-        font-size: 1.2rem;
-    }
-
-    .premium-image {
-        max-width: 140px;
-    }
-
-    .worksiy-home-search-section {
-        padding: 55px;
-    }
-
-    .perfect-job-for-you-category-container h4 {
-        font-size: 2.2rem;
-    }
-
-    .perfect-job-for-you-category-card {
-        width: 215px;
-        /* Compact width for mid-sized screens */
-    }
-
-    .hiring-companies-based-carousel-card {
-        min-width: 190px;
-    }
-}
-
-
-/* Full Desktop Adjustments */
-@media (min-width: 1200px) {
-    .worksiy-home-search-search-bar {
-        max-width: 1000px;
-        /* Restore max-width on larger screens */
-        padding: 15px 20px;
-        /* Ample padding for large screens */
-    }
-
-    .worksiy-home-search-section {
-        padding: 70px;
-    }
-
-    .perfect-job-for-you-category-container h4 {
-        font-size: 2.5rem;
-    }
-
-    .perfect-job-for-you-category-card {
-        width: 250px;
-        /* Larger width for desktop */
-    }
-
-    .hiring-companies-based-carousel-card {
-        min-width: 220px;
+    .footer-logo .logo {
+        width: 120px;
+        height: 40px;
     }
 }
