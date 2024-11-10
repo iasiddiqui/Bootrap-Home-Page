@@ -22,77 +22,57 @@
 
     <div class="worksiy-home-search-section">
       <div class="worksiy-home-search-container">
-        <div class="worksiy-home-search-row align-items-center justify-content-center">
-          <!-- Left Heading Section -->
-          <div class="worksiy-home-search-col-md-4 worksiy-home-search-heading-text">
-            <h3>Over 7,00,000+ <br />jobs to explore</h3>
+          <div class="worksiy-home-search-row align-items-center justify-content-center">
+              <!-- Heading Section -->
+              <div class="worksiy-home-search-col-md-4 worksiy-home-search-heading-text">
+                  <h3>Over 7,00,000+ <br />jobs to explore</h3>
+              </div>
+  
+              <!-- Search Bar Section -->
+              <div class="worksiy-home-search-col-md-8 d-flex justify-content-center">
+                  <div class="worksiy-home-search-search-bar">
+                      <!-- Mobile Input for Skills, Designations, and Companies -->
+                      <div class="worksiy-home-search-input-group">
+                          <span class="worksiy-home-search-input-group-text"><i class="fas fa-search"></i></span>
+                          <select class="worksiy-home-search-form-select desktop-only" id="skills">
+                              <option selected disabled>Enter skills / designations / companies</option>
+                              <option value="Java Developer">Java Developer</option>
+                              <option value="Java Architect">Java Architect</option>
+                              <option value="Java Full Stack Developer">Java Full Stack Developer</option>
+                          </select>
+                          <input type="text" class="worksiy-home-search-form-control mobile-only" placeholder="Enter skills / designations / companies" />
+                      </div>
+  
+                      <!-- Experience Section -->
+                      <div class="worksiy-home-search-input-group">
+                          <span class="worksiy-home-search-input-group-text"><i class="fas fa-briefcase"></i></span>
+                          <select class="worksiy-home-search-form-select desktop-only" id="experience">
+                              <option selected disabled>Enter experience</option>
+                              <option value="Fresher">Fresher</option>
+                              <option value="2023">2023</option>
+                          </select>
+            
+                      </div>
+  
+                      <!-- Location Section -->
+                      <div class="worksiy-home-search-input-group">
+                          <span class="worksiy-home-search-input-group-text"><i class="fas fa-map-marker-alt"></i></span>
+                          <select class="worksiy-home-search-form-select desktop-only" id="location">
+                              <option selected disabled>Enter Location</option>
+                              <option value="Mumbai">Mumbai</option>
+                              <option value="Delhi">Delhi</option>
+                          </select>
+                        
+                      </div>
+  
+                      <!-- Search Button -->
+                      <button class="worksiy-home-search-btn-search">Search</button>
+                  </div>
+              </div>
           </div>
-
-          <!-- Right Search Bar Section -->
-          <div class="worksiy-home-search-col-md-8 d-flex justify-content-center">
-            <div class="worksiy-home-search-search-bar">
-              <!-- Skills Dropdown with Icon -->
-              <div class="worksiy-home-search-input-group">
-                <span class="worksiy-home-search-input-group-text"><i class="fas fa-search"></i></span>
-                <select class="worksiy-home-search-form-select" id="skills">
-                  <option selected disabled>
-                    Enter skills / designations / companies
-                  </option>
-                  <option value="Java Developer">Java Developer</option>
-                  <option value="Java Architect">Java Architect</option>
-                  <option value="Java Full Stack Developer">
-                    Java Full Stack Developer
-                  </option>
-                  <option value="Spring Developer">Spring Developer</option>
-                  <option value="Java Back End Developer">
-                    Java Back End Developer
-                  </option>
-                  <option value="Core Java Developer">
-                    Core Java Developer
-                  </option>
-                  <option value="Java Lead">Java Lead</option>
-                  <option value="AEM Developer">AEM Developer</option>
-                  <option value="Application Developer">
-                    Application Developer
-                  </option>
-                </select>
-              </div>
-
-              <!-- Experience Dropdown with Icon -->
-              <div class="worksiy-home-search-input-group">
-                <span class="worksiy-home-search-input-group-text"><i class="fas fa-briefcase"></i></span>
-                <select class="worksiy-home-search-form-select" id="experience">
-                  <option selected disabled>Enter experience</option>
-                  <option value="Fresher">Fresher</option>
-                  <option value="2023">2023</option>
-                  <option value="2022">2022</option>
-                  <option value="Below 2021">Below 2021</option>
-                </select>
-              </div>
-
-              <!-- Location Dropdown with Icon -->
-              <div class="worksiy-home-search-input-group">
-                <span class="worksiy-home-search-input-group-text"><i class="fas fa-map-marker-alt"></i></span>
-                <select class="worksiy-home-search-form-select" id="location">
-                  <option selected disabled>Enter Location</option>
-                  <option value="Mumbai">Mumbai</option>
-                  <option value="Delhi">Delhi</option>
-                  <option value="Bangalore">Bangalore</option>
-                  <option value="Chennai">Chennai</option>
-                  <option value="Hyderabad">Hyderabad</option>
-                  <option value="Kolkata">Kolkata</option>
-                  <option value="Pune">Pune</option>
-                  <option value="Ahmedabad">Ahmedabad</option>
-                </select>
-              </div>
-
-              <!-- Search Button -->
-              <button class="worksiy-home-search-btn-search">Search</button>
-            </div>
-          </div>
-        </div>
       </div>
-    </div>
+  </div>
+  
 
     <!-- Find the perfect job for YOU-------------------------------------------------------------- -->
 
@@ -190,48 +170,7 @@
       </div>
     </div>
 
-    <!-- ----------------------------featured comapnines-------------------------------------- -->
-
-    <!-- <div class="container mt-5">
-        <h6
-          class="text-center mb-3"
-          style="font-size: 1.1rem; letter-spacing: 1px; color: orange"
-        >
-          Featured Companies
-        </h6>
-
-        <div
-          class="featured-jobs-workisy-scroll-container"
-          id="companyCarousel"
-        >
-          Company Logos
-          <img src="assets/Topcompanies/airtal.gif" alt="Company 1" />
-          <img src="assets/Topcompanies/amazon.gif" alt="Company 2" />
-          <img src="assets/Topcompanies/apple4.webp" alt="Company 3" />
-          <img src="assets/Topcompanies/capgemini.webp" alt="Company 4" />
-          <img src="assets/Topcompanies/cognigent.webp" alt="Company 5" />
-          <img src="assets/Topcompanies/deleoite.webp" alt="Company 6" />
-          <img src="assets/Topcompanies/epam.webp" alt="Company 7" />
-          <img src="assets/Topcompanies/lt.jpeg" alt="Company 8" />
-          <img src="assets/Topcompanies/netfilx.webp" alt="Company 9" />
-          <img src="assets/Topcompanies/pwc.webp" alt="Company 10" />
-          <img src="assets/Topcompanies/tcs.gif" alt="Company 11" />
-          <img src="assets/Topcompanies/tcs.jpeg" alt="Company 12" />
-          <img src="assets/Topcompanies/xoraint.jpeg" alt="Company 13" />
-          <img src="assets/Topcompanies/zenser.jpeg" alt="Company 14" />
-          <img src="assets/Topcompanies/epam.webp" alt="Company 15" />
-          <img src="assets/Topcompanies/infosys.webp" alt="Company 16" />
-
-         -------------- Scroll Buttons------------------------------
-          <button class="featured-jobs-workisy-scroll-btn featured-jobs-workisy-left" onclick="scrollLeft()">
-          <i class="bi bi-arrow-left"></i>
-        </button>
-        <button class="featured-jobs-workisy-scroll-btn featured-jobs-workisy-right" onclick="scrollRight()">
-          <i class="bi bi-arrow-right"></i>
-        </button>
-        ----------------------- Scroll Buttons end-------------------------------------------
-        </div>
-      </div>-->
+   
 
     <!-- -----------------------popular catogeries-----------------------------------------------------------------  -->
 
@@ -2289,23 +2228,13 @@
       </div>
     </div>
 
-    <!-- ------------------------------------------Top hiring companies based on skills------------------------------- -->
+    <!-- ------------------------------------------Job by location------------------------------- -->
 
     <div class="container mt-5">
       <div class="text-center mb-4">
         <p  style="font-size: 1.8rem; font-weight: 600">
           Jobs by Location
         </p>
-        <!-- <p style="font-size: 1.2rem; font-weight: 500;color: orange;">
-            Find your favourite jobs and get the benefits of yourself
-          </p>
-          <select class="top-hirings-cat-all-jobs">
-            <option>All</option>
-            <option>London</option>
-            <option>America</option>
-            <option>Dubai</option>
-            <option>Saudi Arabia</option>
-          </select> -->
       </div>
 
       <div class="hiring-companies-based-custom-scroll-container">
@@ -2374,17 +2303,9 @@
                   border-radius: 10px;
                 ">
               <div class="hiring-companies-based-company-name">America</div>
-              <!-- <div class="hiring-companies-based-review-info">
-                3.8 ⭐ | 56.7k+ reviews
-              </div> -->
+             
             </div>
-            <!-- <p class="hiring-companies-based-review-data">
-                Leading ITES company <br />
-                with global presence
-              </p>
-              <button class="btn hiring-companies-based-view-all">
-                View All
-              </button> -->
+            
           </div>
           <div class="hiring-companies-based-carousel-card">
             <div class="image-container">
@@ -2412,17 +2333,9 @@
                   border-radius: 10px;
                 ">
               <div class="hiring-companies-based-company-name">America</div>
-              <!-- <div class="hiring-companies-based-review-info">
-                3.8 ⭐ | 56.7k+ reviews
-              </div> -->
+           
             </div>
-            <!-- <p class="hiring-companies-based-review-data">
-                Leading ITES company <br />
-                with global presence
-              </p>
-              <button class="btn hiring-companies-based-view-all">
-                View All
-              </button> -->
+           
           </div>
           <div class="hiring-companies-based-carousel-card">
             <div class="image-container">
@@ -2450,17 +2363,9 @@
                   border-radius: 10px;
                 ">
               <div class="hiring-companies-based-company-name">America</div>
-              <!-- <div class="hiring-companies-based-review-info">
-                3.8 ⭐ | 56.7k+ reviews
-              </div> -->
+           
             </div>
-            <!-- <p class="hiring-companies-based-review-data">
-                Leading ITES company <br />
-                with global presence
-              </p>
-              <button class="btn hiring-companies-based-view-all">
-                View All
-              </button> -->
+            
           </div>
           <div class="hiring-companies-based-carousel-card">
             <div class="image-container">
@@ -2488,179 +2393,11 @@
                   border-radius: 10px;
                 ">
               <div class="hiring-companies-based-company-name">America</div>
-              <!-- <div class="hiring-companies-based-review-info">
-                3.8 ⭐ | 56.7k+ reviews
-              </div> -->
+         
             </div>
-            <!-- <p class="hiring-companies-based-review-data">
-                Leading ITES company <br />
-                with global presence
-              </p>
-              <button class="btn hiring-companies-based-view-all">
-                View All
-              </button> -->
+           
           </div>
 
-          <!-- <p class="hiring-companies-based-review-data">
-                Exploring challenging and <br />
-                exciting opportunities
-              </p>
-              <button class="btn hiring-companies-based-view-all">
-                View All
-              </button> -->
-          <!-- </div> -->
-          <!-- <p class="hiring-companies-based-review-data">
-                Exploring challenging and <br />
-                exciting opportunities
-              </p>
-              <button class="btn hiring-companies-based-view-all">
-                View All
-              </button> -->
-          <!-- </div> -->
-          <!-- <div class="hiring-companies-based-carousel-card">
-              <img
-                class="hiring-companies-based-company-logo"
-                src="data:image/gif;base64,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"
-                alt="TCS Logo"
-              />
-              <div
-                style="
-                  background-color: rgba(152, 152, 196, 0.632);
-                  padding: 10px;
-                  border-radius: 10px;
-                "
-              >
-                <div class="hiring-companies-based-company-name">
-                  Tata Consultancy Services
-                </div>
-                <div class="hiring-companies-based-review-info">
-                  3.5 ⭐ | 83.7k+ reviews
-                </div>
-              </div>
-              <p class="hiring-companies-based-review-data">
-                Exploring challenging and <br />
-                exciting opportunities
-              </p>
-              <button class="btn hiring-companies-based-view-all">
-                View All
-              </button>
-            </div> -->
-
-          <!-- <div class="hiring-companies-based-carousel-card">
-              <img
-                class="hiring-companies-based-company-logo"
-                src="data:image/gif;base64,R0lGODlhyABLAPcAAKan31OC0Rxrijqm0jeqz1uN0zqGzm+s2Cl8oydljRIkjmii12CV1SBdmzxqznKv2nq73CB6jrjm7YvS4GWe1juV0ju10yuDpF6S1RpEln3A3iZzoez0+b3a4n+z4FFTqoPI3lR31Gum2IuQzuz5+hlchIbM33a220980FiWw0+lr8vu9qvJ2Te1zzp8zjjI0zt0zvz9/hY1khphhnfV4jyH0uny9CVvoIO9wiRqnza7zzeHmUFsx/n8/UiKtySJlFTJ22irs6/P6U9fsjfB0B91jaS45yx4tKnj6JvJ5+jq9XSNu+Ps+L2+4x9YmjWJqiOFkrnm8z520j2krdXY6xg9lFidrSpps0e30oDD3rPX3CVZiFyQsh9zjUl0z0KYtWx4uHu124y24yyKpvH1+iKBkZHS2hAcjMno7DqAzidIrg8UijyVo9Tq9SU3rKvc6cff9HeyuRhVg3apuDmKzmSI3eb1+tPm9BZRgHWy2ihYsD9p0j1kznKn2x5Umkx50MvZ5svg5VKJyj14tkyb1CF9kN3q8TmzzRc5kzVop5i95MHr7YzAybjB8yx0kSeMlGuf2jmNzhtmiC17nSwzmhVMfQsKh1mF083k5y57lB1QmPH6+xlAlT1dzvn5/PX3/fX9/iJjnRxSlvD6/dfl7RQrkEdwzGmb1y2DtmWZ1id9oenv+aXV6RUxkT1xzTt3zjmQzxxLmDmTzzmWzziZzziczzifzzii0DilzyNnnjeuzx5vizexz2KZ1TtvzlaI0htMlCODkTdUqnK+wKLb6M3x82mR3zFyqUKI0Digwm+ixCJonCdGn2e/2zmuw39+wCd2oYzE3yhujyRynobk55Kc36vo8Nrw9mnP3HLAzUKMrJzS5TeTwjmUysPM5sHP8uDs7zqlyyKAjh93jrjY7kNf0RhZg32v3xpClCiHlCpfpTeanz9HqCaPli1gsuDt8BtHl9Xi+IGi5J3H05yu2aTO5jWWtqLe40Z1xyyPpkl9xDOKtEePyCJjm0Bj0////yH5BAAAAAAALAAAAADIAEsAAAj/AP8JHEiwoMGDCBMqXMiwocOHECNKnEixosWLGDNq3Mixo8ePIEOKHEmypMmTKFOqXMmypcuXMGPKnEmzps2bOHPq3Mmzp8+fQAsCSmTKS4gQKFAEuMS0QAEMGBikOnUKEiQRfbI+yCMkqNeTZIYA0+SOh6miXv4kDRDg1y+nURn0okBhgQgRBw7c+cpX5BJ4sTSJUsfDi2G1Stu+fcpALl27eA9AANW3Mkdv8ABr8uOkQSJ8fxCzdQu38dy6d/M+6Gq5tUUOwjJo5tygQa5BSROTZuwYdeStK1wLl7iEk+zAtBuEynVMH1vFpXtDVp1Hw6jh2BnSQ2R8dmfluZZN/xu0dHfc09MPbD1RL7v7g0qYVemO/PvyHDemIfBh3vTj1OrlcUIYwb1n4D9gIDLfcZvZlwt+G2yAwBOCRIcegOuFkcUmB7pXjQwK0tdgbffdsAE0CKhygQ9Q+ecbdSecAEF7HQ5HBSIgLugdiQ+aiKKKF+STglwX/iagjBpEUaNwQ7SSo4jJlXgiAghccMEY+XzRSy+pvBhgjBBAEA2HS1Y2QilOhshglD1OWeWV+eSjRRseeLmejBBowEqZfXlTCppPrukghCi+OcYY2QjUAzl9YHhkmBpksRefQZHBzp9p6lgfj4RSaeUYX5BA0CqKGAlmnlmAwAGlQIGhAKaB7v8IXqeGdnDQHWJ8iWekWbzBqk9NKPAqoGrKKmWhVjKSUAzkhPEoqqmi8etOq1AiLKzFbjqrj55aQZlCHCRxKq8gmCDqtDgNcca1xGo64rZTqvKEIQ7dkQSkWaQKwhsxoGsTAGesO2ymUA7KrSrzQBSDBBqQa4IJi/hLkxKUBMwuwYJyym0K/UZkByv5lmvCBGRK/FIMH6xh8cCxanusNkpU1MY2Ik9wT8cmtzTCGioLjK27bBJqq0UxoDHByBNIkHNLVPDc88UtvyulMhpx8MYEWJe89EmesGMJzyv/XLDGPpDB0TXETIAEzluX9MzXYPvc7tizTkKKRzGskHTbJjX/YcnfcAfsc5rcoQMPMKKI8l0/y9AT0igSnMu3SEO4YbnlamSuhh6b6+HO51eEfsToR6Bi+hefjCTt5CI10kk5/uwhuy9S1O5CGmkYUEMkkVTgOy223HLLAAMQYE1INgyDBOsjydNJJ3zw4YADvrgCwysu3G6AAXREAosss9BSS/C4EIDFKh9psU4QzI/0SQjQS0+99dhrz7334ItPfvnN9MARJkFoxxRW1T6RxKMc0Zte9a6Xvdzd73vhG98tykcAXZihajhoRzseEbECjqQaCZwfA+3XPQjqb4IEqOAh2oARLbDhB49oRxw8SJJP1EF+C6yfA0uYPwlSUBe8AMJ1/ygSiCBA4QcwnILkaBgSJnhBgfRr4PZ4GEHypVAXQKTBRDiAg2BA4YgwXB0TR2IEKI5wh/irIgoryIsWtEBpEGEBG8rwRTDiYIwl8YQxRKjDKabxhD9sow6wYAeHFFEcZaDjF3+gRDyWZBV/yKEUH9hDK7LRjTrABtsOQoY4FCIChUhkHdMhRkeOpBGuiCIJ/+jDK7axBTrQwT0UwoIdRACUoVQkFJRlSpPIQ5VoNGErLwlLHRChGAcJhBWKcEtcijIYKvhWL0myChSc0Y/CtCQQMUkEIgBBmv+wwRyK0IUijOOWhcglFNKBiWme5Buv6CMl1RhITBqTCNQYSC130f+Fcp7TmWUIBi/daRIxyJOKgHSlPbv5gkWQggsC2AU//YnOUIpDBf4jqEl6gIFJInSY2ywmEV5ABDZIQwARnag5K1qGHYBDoyiBg0dZqc1XGvMFU3DEDFCa0n6uFJeFuCBMUaKIVWZzjds0pjMuMIMZSIKnEvXpP9PpraGiJAaQCGYlkcoLHRziCTMogSTGClWVTtWlVk0JE5CBza1SkBcWsEcCzNHUsT4VpVGlaATEYYS0qiQJufuoFXmRjEmYg651JStezQpKK/h1JX2Y5wkJEA4EmEMOJShBU52q2J5SdBIvfWxK7ECIjxJvHzPAgxzMkdnN2rWsUi0EC0S7EnKBGCCNtbgFN3JQCTn4lrWaTexdPWtO9tF2JefwXgVq0Y0b4KESqv1ta4UL2y6MYxLoO65KSEAIWVTgCHKoBHSju9rpcna4eS3CbLW7EjjwIxFbiG98E7CFBNj3vtLIrzQcwV9HZOK/mZgDewdM4AIb+MAITrCCF8zgBjv4wRDGTkAAADs="
-                alt="TCS Logo"
-              />
-              <div
-                style="
-                  background-color: rgba(152, 152, 196, 0.632);
-                  padding: 10px;
-                  border-radius: 10px;
-                "
-              >
-                <div class="hiring-companies-based-company-name">
-                  Tata Consultancy Services
-                </div>
-                <div class="hiring-companies-based-review-info">
-                  3.5 ⭐ | 83.7k+ reviews
-                </div>
-              </div>
-              <p class="hiring-companies-based-review-data">
-                Exploring challenging and <br />
-                exciting opportunities
-              </p>
-              <button class="btn hiring-companies-based-view-all">
-                View All
-              </button>
-            </div> -->
-
-          <!-- <div class="hiring-companies-based-carousel-card">
-              <img
-                class="hiring-companies-based-company-logo"
-                src="data:image/gif;base64,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"
-                alt="TCS Logo"
-              />
-              <div
-                style="
-                  background-color: rgba(152, 152, 196, 0.632);
-                  padding: 10px;
-                  border-radius: 10px;
-                "
-              >
-                <div class="hiring-companies-based-company-name">
-                  Tata Consultancy Services
-                </div>
-                <div class="hiring-companies-based-review-info">
-                  3.5 ⭐ | 83.7k+ reviews
-                </div>
-              </div>
-              <p class="hiring-companies-based-review-data">
-                Exploring challenging and <br />
-                exciting opportunities
-              </p>
-              <button class="btn hiring-companies-based-view-all">
-                View All
-              </button>
-            </div> -->
-
-          <!-- <div class="hiring-companies-based-carousel-card">
-              <img
-                class="hiring-companies-based-company-logo"
-                src="data:image/gif;base64,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"
-                alt="TCS Logo"
-              />
-              <div
-                style="
-                  background-color: rgba(152, 152, 196, 0.632);
-                  padding: 10px;
-                  border-radius: 10px;
-                "
-              >
-                <div class="hiring-companies-based-company-name">
-                  Tata Consultancy Services
-                </div>
-                <div class="hiring-companies-based-review-info">
-                  3.5 ⭐ | 83.7k+ reviews
-                </div>
-              </div>
-              <p class="hiring-companies-based-review-data">
-                Exploring challenging and <br />
-                exciting opportunities
-              </p>
-              <button class="btn hiring-companies-based-view-all">
-                View All
-              </button>
-            </div> -->
-
-          <!-- <div class="hiring-companies-based-carousel-card">
-              <img
-                class="hiring-companies-based-company-logo"
-                src="data:image/gif;base64,R0lGODlhyABLAPcAAKan31OC0Rxrijqm0jeqz1uN0zqGzm+s2Cl8oydljRIkjmii12CV1SBdmzxqznKv2nq73CB6jrjm7YvS4GWe1juV0ju10yuDpF6S1RpEln3A3iZzoez0+b3a4n+z4FFTqoPI3lR31Gum2IuQzuz5+hlchIbM33a220980FiWw0+lr8vu9qvJ2Te1zzp8zjjI0zt0zvz9/hY1khphhnfV4jyH0uny9CVvoIO9wiRqnza7zzeHmUFsx/n8/UiKtySJlFTJ22irs6/P6U9fsjfB0B91jaS45yx4tKnj6JvJ5+jq9XSNu+Ps+L2+4x9YmjWJqiOFkrnm8z520j2krdXY6xg9lFidrSpps0e30oDD3rPX3CVZiFyQsh9zjUl0z0KYtWx4uHu124y24yyKpvH1+iKBkZHS2hAcjMno7DqAzidIrg8UijyVo9Tq9SU3rKvc6cff9HeyuRhVg3apuDmKzmSI3eb1+tPm9BZRgHWy2ihYsD9p0j1kznKn2x5Umkx50MvZ5svg5VKJyj14tkyb1CF9kN3q8TmzzRc5kzVop5i95MHr7YzAybjB8yx0kSeMlGuf2jmNzhtmiC17nSwzmhVMfQsKh1mF083k5y57lB1QmPH6+xlAlT1dzvn5/PX3/fX9/iJjnRxSlvD6/dfl7RQrkEdwzGmb1y2DtmWZ1id9oenv+aXV6RUxkT1xzTt3zjmQzxxLmDmTzzmWzziZzziczzifzzii0DilzyNnnjeuzx5vizexz2KZ1TtvzlaI0htMlCODkTdUqnK+wKLb6M3x82mR3zFyqUKI0Digwm+ixCJonCdGn2e/2zmuw39+wCd2oYzE3yhujyRynobk55Kc36vo8Nrw9mnP3HLAzUKMrJzS5TeTwjmUysPM5sHP8uDs7zqlyyKAjh93jrjY7kNf0RhZg32v3xpClCiHlCpfpTeanz9HqCaPli1gsuDt8BtHl9Xi+IGi5J3H05yu2aTO5jWWtqLe40Z1xyyPpkl9xDOKtEePyCJjm0Bj0////yH5BAAAAAAALAAAAADIAEsAAAj/AP8JHEiwoMGDCBMqXMiwocOHECNKnEixosWLGDNq3Mixo8ePIEOKHEmypMmTKFOqXMmypcuXMGPKnEmzps2bOHPq3Mmzp8+fQAsCSmTKS4gQKFAEuMS0QAEMGBikOnUKEiQRfbI+yCMkqNeTZIYA0+SOh6miXv4kDRDg1y+nURn0okBhgQgRBw7c+cpX5BJ4sTSJUsfDi2G1Stu+fcpALl27eA9AANW3Mkdv8ABr8uOkQSJ8fxCzdQu38dy6d/M+6Gq5tUUOwjJo5tygQa5BSROTZuwYdeStK1wLl7iEk+zAtBuEynVMH1vFpXtDVp1Hw6jh2BnSQ2R8dmfluZZN/xu0dHfc09MPbD1RL7v7g0qYVemO/PvyHDemIfBh3vTj1OrlcUIYwb1n4D9gIDLfcZvZlwt+G2yAwBOCRIcegOuFkcUmB7pXjQwK0tdgbffdsAE0CKhygQ9Q+ecbdSecAEF7HQ5HBSIgLugdiQ+aiKKKF+STglwX/iagjBpEUaNwQ7SSo4jJlXgiAghccMEY+XzRSy+pvBhgjBBAEA2HS1Y2QilOhshglD1OWeWV+eSjRRseeLmejBBowEqZfXlTCppPrukghCi+OcYY2QjUAzl9YHhkmBpksRefQZHBzp9p6lgfj4RSaeUYX5BA0CqKGAlmnlmAwAGlQIGhAKaB7v8IXqeGdnDQHWJ8iWekWbzBqk9NKPAqoGrKKmWhVjKSUAzkhPEoqqmi8etOq1AiLKzFbjqrj55aQZlCHCRxKq8gmCDqtDgNcca1xGo64rZTqvKEIQ7dkQSkWaQKwhsxoGsTAGesO2ymUA7KrSrzQBSDBBqQa4IJi/hLkxKUBMwuwYJyym0K/UZkByv5lmvCBGRK/FIMH6xh8cCxanusNkpU1MY2Ik9wT8cmtzTCGioLjK27bBJqq0UxoDHByBNIkHNLVPDc88UtvyulMhpx8MYEWJe89EmesGMJzyv/XLDGPpDB0TXETIAEzluX9MzXYPvc7tizTkKKRzGskHTbJjX/YcnfcAfsc5rcoQMPMKKI8l0/y9AT0igSnMu3SEO4YbnlamSuhh6b6+HO51eEfsToR6Bi+hefjCTt5CI10kk5/uwhuy9S1O5CGmkYUEMkkVTgOy223HLLAAMQYE1INgyDBOsjydNJJ3zw4YADvrgCwysu3G6AAXREAosss9BSS/C4EIDFKh9psU4QzI/0SQjQS0+99dhrz7334ItPfvnN9MARJkFoxxRW1T6RxKMc0Zte9a6Xvdzd73vhG98tykcAXZihajhoRzseEbECjqQaCZwfA+3XPQjqb4IEqOAh2oARLbDhB49oRxw8SJJP1EF+C6yfA0uYPwlSUBe8AMJ1/ygSiCBA4QcwnILkaBgSJnhBgfRr4PZ4GEHypVAXQKTBRDiAg2BA4YgwXB0TR2IEKI5wh/irIgoryIsWtEBpEGEBG8rwRTDiYIwl8YQxRKjDKabxhD9sow6wYAeHFFEcZaDjF3+gRDyWZBV/yKEUH9hDK7LRjTrABtsOQoY4FCIChUhkHdMhRkeOpBGuiCIJ/+jDK7axBTrQwT0UwoIdRACUoVQkFJRlSpPIQ5VoNGErLwlLHRChGAcJhBWKcEtcijIYKvhWL0myChSc0Y/CtCQQMUkEIgBBmv+wwRyK0IUijOOWhcglFNKBiWme5Buv6CMl1RhITBqTCNQYSC130f+Fcp7TmWUIBi/daRIxyJOKgHSlPbv5gkWQggsC2AU//YnOUIpDBf4jqEl6gIFJInSY2ywmEV5ABDZIQwARnag5K1qGHYBDoyiBg0dZqc1XGvMFU3DEDFCa0n6uFJeFuCBMUaKIVWZzjds0pjMuMIMZSIKnEvXpP9PpraGiJAaQCGYlkcoLHRziCTMogSTGClWVTtWlVk0JE5CBza1SkBcWsEcCzNHUsT4VpVGlaATEYYS0qiQJufuoFXmRjEmYg651JStezQpKK/h1JX2Y5wkJEA4EmEMOJShBU52q2J5SdBIvfWxK7ECIjxJvHzPAgxzMkdnN2rWsUi0EC0S7EnKBGCCNtbgFN3JQCTn4lrWaTexdPWtO9tF2JefwXgVq0Y0b4KESqv1ta4UL2y6MYxLoO65KSEAIWVTgCHKoBHSju9rpcna4eS3CbLW7EjjwIxFbiG98E7CFBNj3vtLIrzQcwV9HZOK/mZgDewdM4AIb+MAITrCCF8zgBjv4wRDGTkAAADs="
-                alt="TCS Logo"
-              />
-              <div
-                style="
-                  background-color: rgba(152, 152, 196, 0.632);
-                  padding: 10px;
-                  border-radius: 10px;
-                "
-              >
-                <div class="hiring-companies-based-company-name">
-                  Tata Consultancy Services
-                </div>
-                <div class="hiring-companies-based-review-info">
-                  3.5 ⭐ | 83.7k+ reviews
-                </div>
-              </div>
-              <p class="hiring-companies-based-review-data">
-                Exploring challenging and <br />
-                exciting opportunities
-              </p>
-              <button class="btn hiring-companies-based-view-all">
-                View All
-              </button>
-            </div> -->
         </div>
         <div class="hiring-companies-based-scroll-track">
           <div class="hiring-companies-based-scroll-thumb" id="scrollThumb"></div>
@@ -2677,7 +2414,7 @@
     <div class="container mt-5">
       <!-- Premium Services Section 1 -->
       <div class="premium-section">
-        <div class="d-flex">
+        <div class="d-flex d-flex-1">
           <!-- Left Image Section -->
           <div class="me-3">
             <img src="assets/premium services/pimg1.png" alt="Premium Service" class="premium-image" />
@@ -2722,7 +2459,7 @@
     
       <!-- Premium Services Section 2 -->
       <div class="premium-section">
-        <div class="d-flex">
+        <div class="d-flex d-flex-1">
           <!-- Left Image Section -->
           <div class="me-3">
             <img src="assets/premium services/pimg1.png" alt="Premium Service" class="premium-image" />
