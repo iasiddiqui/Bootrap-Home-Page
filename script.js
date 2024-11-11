@@ -153,3 +153,22 @@ carouselContainer.addEventListener("scroll", updateScrollThumb);
 
 // Initial call to position the scroll thumb correctly
 updateScrollThumb();
+
+
+
+// --------------Jobs by location----------------
+
+function scrollCarousel(direction) {
+  const container = document.getElementById('carouselContainer');
+  const scrollAmount = 200; 
+
+  if (direction === 'left') {
+    container.scrollLeft -= scrollAmount;
+  } else if (direction === 'right') {
+    container.scrollLeft += scrollAmount;
+  }
+}
+
+
+
+

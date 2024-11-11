@@ -1,11 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Santoshi:wght@400;700&display=swap');
+
+* {
+    font-family: 'Santoshi', sans-serif;
+}
+
 .main {
     background-color: rgba(205, 205, 206, 0.242);
     padding-bottom: 3rem;
 }
 
+body {
+    font-family: 'Santoshi', sans-serif;
+}
 
-/* home serch bar-------------------------------------------- */
-/* General container and section styling */
+
+/*-------------------------- home serch bar-------------------------------------------- */
+
 .worksiy-home-search-section {
     background: linear-gradient(to right, #0033cc, #6699ff);
     padding: 60px;
@@ -45,7 +55,7 @@
     background-color: #fff;
     border-radius: 50px;
     padding: 10px 15px;
-    flex-wrap: wrap; /* Enables wrapping for smaller screens */
+    flex-wrap: wrap; 
 }
 
 /* Input group styling */
@@ -197,6 +207,7 @@
 
 /* --------------------------Find the perfect job for YOU----------------------------- */
 
+
 /* General container for centering content */
 .perfect-job-for-you-category-container {
     margin-top: 5vh;
@@ -204,45 +215,42 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-/* Title Styling */
-.perfect-job-for-you-category-container h4 {
+  }
+  
+  /* Title Styling */
+  .perfect-job-for-you-category-container h4 {
     font-weight: 600;
     letter-spacing: 1px;
     font-size: 30px;
-}
-
-/* Flexbox for card items (single row) */
-.perfect-job-for-you-category-cards {
+  }
+  
+  /* Flexbox for card items (single row) */
+  .perfect-job-for-you-category-cards {
     display: flex;
     justify-content: center;
-    gap: 1rem;
-    /* Reduced gap for better spacing */
+    gap: 1rem; /* Reduced gap for better spacing */
     position: relative;
     margin-top: 2rem;
-    flex-wrap: wrap;
-}
-
-/* Individual Category Card */
-.perfect-job-for-you-category-card {
-    width: 250px;
-    /* Smaller width for compact design */
+  }
+  
+  /* Individual Category Card */
+  .perfect-job-for-you-category-card {
+    width: 250px; /* Smaller width for compact design */
     height: 120px;
     position: relative;
     overflow: hidden;
     border-radius: 10px;
     transition: box-shadow 0.3s ease-in-out;
     cursor: pointer;
-}
-
-/* Hover effect and card styling */
-.perfect-job-for-you-category-card:hover {
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
-}
-
-/* Content inside the card (icon and title) */
-.perfect-job-for-you-card-content {
+  }
+  
+  /* Hover effect and card styling */
+  .perfect-job-for-you-category-card:hover {
+    box-shadow: 0px 8px 20px rgba(182, 178, 178, 0.3);
+  }
+  
+  /* Content inside the card (icon and title) */
+  .perfect-job-for-you-card-content {
     height: 100px;
     width: 100%;
     padding: 1rem;
@@ -252,224 +260,87 @@
     justify-content: center;
     position: relative;
     z-index: 2;
-}
-
-.perfect-job-for-you-card-content i {
-    font-size: 2.5rem;
-    /* Slightly smaller icon size */
+  }
+  
+  .perfect-job-for-you-card-content i {
+    font-size: 2.5rem; /* Slightly smaller icon size */
     padding: 10px;
     border-radius: 50%;
-    background-color: inherit;
-    /* Ensures icon background matches category color */
-}
-
-.perfect-job-for-you-card-content h6 {
+    background-color: inherit; /* Ensures icon background matches category color */
+  }
+  
+  .perfect-job-for-you-card-content h6 {
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
-    font-weight: bolder
-    /* margin-top: 1.5rem; */
-}
-
-/* Background style for the card */
-.perfect-job-for-you-background-style {
+    margin-top: 0.5rem;
+  }
+  
+  /* Background style for the card */
+  .perfect-job-for-you-background-style {
     position: absolute;
     width: 200px;
     height: 100px;
     padding: 1rem;
     z-index: -1;
-}
-
-/* Circle styling for the background */
-.perfect-job-for-you-circle {
+  }
+  
+  /* Circle styling for the background */
+  .perfect-job-for-you-circle {
     position: absolute;
     width: 50px;
     height: 50px;
     border-radius: 50%;
-}
-
-/* Custom Colors */
-/* .perfect-job-for-you-remote { background-color: rgb(209, 209, 250); } */
-/* .perfect-job-for-you-freelance { background-color: rgb(245, 242, 235); }
-  .perfect-job-for-you-full-time { background-color: rgb(249, 236, 238); }
-  .perfect-job-for-you-part-time { background-color: rgb(234, 249, 234); }
-  .perfect-job-for-you-work-from-home { background-color: rgb(232, 245, 239); } */
-
-.perfect-job-for-you-remote {
-    background-image: url('./assets/categories/card1.svg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 10px;
-    padding: 20px;
-}
-
-.perfect-job-for-you-freelance {
-    background-image: url('./assets/categories/card2.svg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 10px;
-    padding: 20px;
-}
-
-.perfect-job-for-you-full-time {
-    background-image: url('./assets/categories/card3.svg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 10px;
-    padding: 20px;
-}
-
-.perfect-job-for-you-part-time {
-    background-image: url('./assets/categories/card4.svg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 10px;
-    padding: 20px;
-}
-
-.perfect-job-for-you-work-from-home {
-    background-image: url('./assets/categories/card1.svg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 10px;
-    padding: 20px;
-}
-
-.perfect-job-for-you-remote-text {
-    color: #236AA6;
-    margin-top: 1rem;
-}
-
-.perfect-job-for-you-freelance-text {
-    color: #435652;
-    margin-top: 1rem;
-
-}
-
-.perfect-job-for-you-full-time-text {
-    color: #eafff9;
-    margin-top: 1rem;
-
-}
-
-.perfect-job-for-you-part-time-text {
-    color:#f7ffd6 ;
-    margin-top: 1rem;
-
-}
-
-.perfect-job-for-you-work-from-home-text {
-    color: #236AA6;
-    margin-top: 1rem;
-
-}
-
-/* Circle Color Matching */
-.perfect-job-for-you-remote-circle {
+  }
+  
+  /* Custom Colors */
+  .perfect-job-for-you-remote { background-color: rgb(223, 223, 241); }
+  .perfect-job-for-you-freelance { background-color: rgb(237, 234, 227); }
+  .perfect-job-for-you-full-time { background-color: rgb(229, 215, 217); }
+  .perfect-job-for-you-part-time { background-color: rgb(222, 235, 222); }
+  .perfect-job-for-you-work-from-home { background-color: rgb(225, 241, 234); }
+  
+  .perfect-job-for-you-remote-text { color: purple; }
+  .perfect-job-for-you-freelance-text { color: rgb(249, 107, 56); }
+  .perfect-job-for-you-full-time-text { color: orangered; }
+  .perfect-job-for-you-part-time-text { color: rgb(25, 101, 25); }
+  .perfect-job-for-you-work-from-home-text { color: rgb(11, 206, 236); }
+  
+  /* Circle Color Matching */
+  /* .perfect-job-for-you-remote-circle { background-color: rgb(231, 231, 248); }
+  .perfect-job-for-you-freelance-circle { background-color: rgb(244, 234, 217); }
+  .perfect-job-for-you-full-time-circle { background-color: rgb(253, 225, 230); }
+  .perfect-job-for-you-part-time-circle { background-color: rgb(216, 249, 216); }
+  .perfect-job-for-you-work-from-home-circle { background-color: rgb(212, 246, 230); }
+   */
+  /* Fancy Icon Styling */
+  .perfect-job-for-you-remote-icon {
     background-color: rgb(231, 231, 248);
-}
-
-.perfect-job-for-you-freelance-circle {
-    background-color: rgb(244, 234, 217);
-}
-
-.perfect-job-for-you-full-time-circle {
-    background-color: rgb(253, 225, 230);
-}
-
-.perfect-job-for-you-part-time-circle {
-    background-color: rgb(216, 249, 216);
-}
-
-.perfect-job-for-you-work-from-home-circle {
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 3rem;
+    color: purple;
+  }
+  
+  .perfect-job-for-you-work-from-home-icon {
     background-color: rgb(212, 246, 230);
-}
-
-/* Fancy Icon Styling */
-.perfect-job-for-you-remote-icon {
-    background-color: rgb(231, 231, 248);
-    /* padding: 15px; */
-    margin-top: -1rem;
+    padding: 15px;
     border-radius: 50%;
     font-size: 3rem;
-    color: #A7C8E1;
-}
-.perfect-job-for-you-freelance-icon {
-    background-color: rgb(231, 231, 248);
-    /* padding: 15px; */
-    margin-top: -1rem;
-    border-radius: 50%;
-    font-size: 3rem;
-    color: #d2f8ff  ;
-}
+    color: rgb(5, 89, 102);
+  }
 
-.perfect-job-for-you-full-time-icon {
-    background-color: rgb(212, 246, 230);
-    /* padding: 15px; */
-    margin-top: -1rem;
-    border-radius: 50%;
-    font-size: 3rem;
-    color: #d4fff2;
-}
-.perfect-job-for-you-part-time-icon {
-    background-color: rgb(212, 246, 230);
-    /* padding: 15px; */
-    margin-top: -1rem;
-    border-radius: 50%;
-    font-size: 3rem;
-    color: #f7ffd6;
-}
-.perfect-job-for-you-work-from-home-icon {
-    background-color: rgb(212, 246, 230);
-    /* padding: 15px; */
-    margin-top: -1rem;
-    border-radius: 50%;
-    font-size: 3rem;
-    color: #A7C8E1;
-}
-
-
-
-
-@media (max-width: 768px) {
-    .perfect-job-for-you-category-cards {
-        grid-template-columns: 1fr;
+  @media(max-width:586px){
+    .perfect-job-for-you-category-cards{
+        flex-direction: column;
     }
 
-    .perfect-job-for-you-category-card {
-        width: 90%;
-        margin: 0 auto;
-    }
-    
-    .perfect-job-for-you-card-content i {
-        font-size: 1.8rem;
-    }
-
-    .perfect-job-for-you-category-container h4 {
-        font-size: 24px;
-    }
-}
-
-@media (max-width: 586px) {
-    .perfect-job-for-you-category-container h4 {
-        font-size: 20px;
-    }
-
-    .perfect-job-for-you-card-content h6 {
-        font-size: 0.9rem;
-        margin-top: 2.5rem;
-    }
-
-    .perfect-job-for-you-card-content i {
-        font-size: 1.5rem;
-    }
-}
-
-
+      /* Title Styling */
+      .perfect-job-for-you-category-container h4 {
+        font-weight: 600;
+        letter-spacing: 1px;
+        font-size: 22px;
+      }
+  }
 
 
 
@@ -528,55 +399,48 @@
 }
 
 .hiring-companies-based-carousel-card {
-    flex: 0 0 250px;
-    text-align: center;
-    padding: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
 .image-container {
-    width: 5rem;   /* Match the original image size */
+    width: 10rem;   
     height: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* overflow: hidden; */
-    margin-left: 4.5rem;
+    margin: auto;
+    overflow: hidden;
 }
 
 .hiring-companies-based-company-logo {
-    max-width: 100%; /* Constrain image within container */
-    max-height: 100%;
+    max-width:80px;
+    max-height:100px;
     object-fit: cover;
     border-radius: 5px;
     
 }
 
-/* .hiring-companies-based-company-logo {
-    width: 5rem;
-    margin: 0 auto 10px;
-    border-radius: 0.2rem;
-    object-fit: cover;
-} */
 
 .hiring-companies-based-company-name {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
-    margin-bottom: 5px;
-    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+    background-color:rgba(230, 223, 214, 0.523);
+    /* text-transform: uppercase; */
 }
-.hiring-companies-based-review-info {
-    font-size: 13px;
+/* .hiring-companies-based-review-info {
+    font-size: 10px;
     color: #555;
     margin-bottom: 15px;
 }
 
 .hiring-companies-based-review-data {
-    font-size: 14px;
+    font-size: 10px;
     font-weight: 700;
-}
+} */
 
 .hiring-companies-based-custom-scroll-container {
     position: relative;
@@ -611,6 +475,37 @@
     border: none;
     outline: none;
 }
+/* Container for carousel navigation buttons */
+
+.carousel-navigation {
+    position: absolute;
+    top: 0px; 
+    width: 100%;
+    display: flex;
+    border-radius: 50%;
+    justify-content: flex-end;
+    gap: 10px;
+    z-index: 0;
+}
+
+.carousel-btn {
+    background-color: #fff;
+    color: rgb(0, 0, 253);
+    border: none;
+    border-radius: 50px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-btn:hover {
+    background-color:  rgb(0, 0, 253);
+    color:#fff;
+}
+
+
+
 
 @media (max-width: 1200px) {
     .hiring-companies-based-carousel-card {
@@ -627,6 +522,9 @@
       overflow-x: scroll;
       -webkit-overflow-scrolling: touch;
     }
+    .hiring-companies-based-scroll-thumb{
+        width: 30%;
+    }
   }
   
   @media (max-width: 480px) {
@@ -639,6 +537,9 @@
   
     .hiring-companies-based-company-name {
       font-size: 0.9rem;
+    }
+    .jobs-by-location{
+        font-weight: 500;
     }
   }
 
@@ -882,32 +783,24 @@
     flex-wrap: wrap;
 }
 
-.service-btn {
+#service-btn-1 {
     display: flex;
     align-items: center;
     gap: 0.8rem;
     border: 1px solid rgb(181, 181, 181);
     border-radius: 20px;
-    padding: 0.3rem;
+    padding: 0.1rem 0.8rem ;
     width: auto;
     justify-content: center;
 }
 
-.service-btn .icon {
+#service-btn-1 .icon {
     font-size: 0.9rem;
     color: #096eb6;
 }
 
-/* .learn-more-btn {
-    font-size: 1rem;
-    text-decoration: none;
-    background-color: #096eb6;
-    color: white;
-    padding: 0.7rem;
-    border-radius: 20px;
-    width: 120px;
-} */
 
+    
 .text-center-small {
     font-size: 0.7rem;
     color: rgb(65, 64, 64);
@@ -921,17 +814,10 @@
     margin-top: 1rem;
 }
 
-.learn-more-btn {
-    font-size: 1rem;
-    text-decoration: none;
+#learn-more-btn {
     background-color: #096eb6;
     color: white;
-    margin-top: -4.5rem;
-    padding: 0.7rem;
-    border-radius: 20px;
-    width: 120px;
-    text-align: center
-    ;
+    font-size:1rem;
 }
 
 .text-center-small {
@@ -981,15 +867,8 @@
     margin-top: 1rem;
 }
 
-.learn-more-btn {
-    font-size: 1rem;
-    text-decoration: none;
-    background-color: #096eb6;
-    color: white;
-    padding: 0.7rem;
-    border-radius: 20px;
-    width: 120px;
-    text-align: center;
+#learn-more-btn {
+   margin-bottom:1rem;
 }
 
 /* Responsive layout for .action-row on smaller screens */
@@ -1021,23 +900,24 @@
 
 
 
-/* footer css */
+/* -------------------------footer css----------------------------------------- */
 
 
 #footer {
     width: 100%;
-    margin-top: 2rem;
+    background-color: #333;
+    color: white;
+    font-family: Arial, sans-serif;
 }
 
-/* Main Footer Content */
 .footer-content {
     display: flex;
-    justify-content: space-evenly;
-    padding: 1rem;
+    padding: 2rem 12rem;
     flex-wrap: wrap;
     gap: 2rem;
-    background-color: white;
-    width: 100%;
+    justify-content: space-between;
+    background-color: #444;
+    color: white;
 }
 
 .company {
@@ -1049,6 +929,8 @@
     font-size: 1.2rem;
     text-transform: capitalize;
     font-weight: bold;
+    margin-bottom: 1rem;
+    color: #FFD700;
 }
 
 .company ul {
@@ -1057,77 +939,56 @@
 }
 
 .company ul li {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
 }
 
-/* Social Media Icons */
+.company ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.company ul li a:hover {
+    color: #FFD700;
+}
+
 .follow-us {
     text-align: center;
+    flex: 1 1 200px;
 }
 
 .icon-btn {
     padding: 0.5rem;
     border-radius: 50%;
     border: 1px solid gray;
-    background-color: white;
-    color: black;
+    background-color: #555;
+    color: white;
     cursor: pointer;
-    transition: all 0.7s;
+    transition: all 0.3s;
+    margin: 0 0.5rem;
 }
 
 .icon-btn:hover {
-    background-color: rgb(23, 23, 174);
-    color: white;
+    background-color: #FFD700;
+    color: black;
 }
 
 .icon-btn i {
     font-size: 1.2rem;
 }
 
-.app-store img {
-    width: 150px;
-    height: 100px;
-}
-
-/* Footer Bottom Section */
 .footer-bottom {
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
-    background-color: #f1f1f1;
+    padding: 1rem 12rem;
+    background-color: #ffffff;
     align-items: center;
     gap: 2rem;
     width: 100%;
     flex-wrap: wrap;
 }
 
-/* Logos */
-.business-logos {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.business-logos p {
-    font-size: 1rem;
-    border-right: 1px solid gray;
-    padding-right: 1rem;
-}
-
-.logos-container {
-    display: flex;
-    gap: 1rem;
-    overflow: hidden;
-}
-
-.logo-img {
-    width: 100px;
-    height: 40px;
-    animation: moveImages 2s linear infinite;
-}
-
-/* Logo Section */
 .footer-logo {
     display: flex;
     gap: 1rem;
@@ -1137,53 +998,75 @@
 
 .footer-logo .logo {
     width: 150px;
-    height: 50px;
+    height: auto;
 }
 
 .footer-text p {
     margin: 0;
+    color: #111111;
 }
 
-/* Keyframe Animation for Moving Logos */
-@keyframes moveImages {
-    0% {
-        transform: translateX(0);
+.footer-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #FFD700;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .footer-content {
+        padding: 2rem 6rem;
     }
-    100% {
-        transform: translateX(-100%);
+    .footer-bottom {
+        padding: 1rem 6rem;
     }
 }
 
-/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .footer-content {
         flex-direction: column;
         align-items: center;
+        text-align: center;
+        padding: 2rem;
     }
 
     .company {
         max-width: 100%;
-        text-align: center;
+        flex: 1 1 100%;
+    }
+
+    .follow-us {
+        flex: 1 1 100%;
     }
 
     .footer-bottom {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        padding: 1rem 2rem;
     }
 
-    .business-logos {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .logos-container {
-        flex-wrap: wrap;
+    .footer-bottom .footer-links {
+        margin-top: 1rem;
         justify-content: center;
     }
 }
 
 @media (max-width: 576px) {
+    .footer-content {
+        padding: 1rem;
+    }
+
     .icon-btn i {
         font-size: 1rem;
     }
@@ -1196,18 +1079,17 @@
         font-size: 0.8rem;
     }
 
-    .app-store img {
-        width: 120px;
-        height: 80px;
-    }
-
-    .logo-img {
-        width: 80px;
-        height: 30px;
-    }
-
     .footer-logo .logo {
         width: 120px;
-        height: 40px;
+    }
+
+    .footer-bottom {
+        padding: 1rem;
+    }
+
+    .footer-bottom .footer-links {
+        margin-top: 1rem;
+        flex-direction: column;
+        align-items: center;
     }
 }
