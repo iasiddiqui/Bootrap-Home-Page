@@ -172,3 +172,91 @@ function scrollCarousel(direction) {
 
 
 
+// <!-- Latest jobs  Workisy start--------------------------------------------------------- -->
+
+
+
+function scrollCarousel(direction, section) {
+  // Get the container of the carousel cards based on the section
+  const container = document.getElementById(`cards-container-${section}`);
+  
+  // Get the width of a single card
+  const cardWidth = container.querySelector('.card').offsetWidth;
+  
+  // Set the scroll amount based on direction
+  if (direction === 'left') {
+    container.scrollBy({
+      left: -cardWidth,
+      behavior: 'smooth'
+    });
+  } else if (direction === 'right') {
+    container.scrollBy({
+      left: cardWidth,
+      behavior: 'smooth'
+    });
+  }
+}
+
+
+// function scrollCarousel(direction) {
+//   const container = document.getElementById('cards-container-latest-job-on-workisy');
+//   const scrollAmount = 300; 
+
+//   if (direction === 'left') {
+//     container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+//   } else if (direction === 'right') {
+//     container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+//   }
+// }
+// function scrollCarousel(direction) {
+//   const container = document.getElementById("cards-container-work-from-home");
+//   const scrollAmount = 300; // Adjust this based on card width
+  
+//   if (direction === 'left') {
+//     container.scrollBy({
+//       left: -scrollAmount,
+//       behavior: 'smooth',
+//     });
+//   } else if (direction === 'right') {
+//     container.scrollBy({
+//       left: scrollAmount,
+//       behavior: 'smooth',
+//     });
+//   }
+// }
+
+// function scrollCarousel(direction) {
+//   const container = document.getElementById('cards-container-part-times');
+//   const scrollAmount = 300; 
+
+//   if (direction === 'left') {
+//     container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+//   } else if (direction === 'right') {
+//     container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+//   }
+// }
+// function scrollCarousel(direction) {
+//   const container = document.getElementById('cards-container-full-times');
+//   const scrollAmount = 300; 
+
+//   if (direction === 'left') {
+//     container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+//   } else if (direction === 'right') {
+//     container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+//   }
+// }
+// function scrollCarousel(direction) {
+//   const container = document.getElementById('cards-container-freelances');
+//   const scrollAmount = 300; 
+
+//   if (direction === 'left') {
+//     container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+//   } else if (direction === 'right') {
+//     container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+//   }
+// }
+
+
+
+
+
