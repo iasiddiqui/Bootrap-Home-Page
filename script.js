@@ -158,7 +158,7 @@ updateScrollThumb();
 
 // --------------Jobs by location----------------
 
-function scrollCarousel(direction) {
+function scrollCarouselLocation(direction) {
   const container = document.getElementById('carouselContainer');
   const scrollAmount = 200; 
 
@@ -176,7 +176,7 @@ function scrollCarousel(direction) {
 
 
 
-function scrollCarousel(direction, section) {
+function scrollCarousel(direction,section) {
   // Get the container of the carousel cards based on the section
   const container = document.getElementById(`cards-container-${section}`);
   
@@ -196,67 +196,4 @@ function scrollCarousel(direction, section) {
     });
   }
 }
-
-
-// function scrollCarousel(direction) {
-//   const container = document.getElementById('cards-container-latest-job-on-workisy');
-//   const scrollAmount = 300; 
-
-//   if (direction === 'left') {
-//     container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
-//   } else if (direction === 'right') {
-//     container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-//   }
-// }
-// function scrollCarousel(direction) {
-//   const container = document.getElementById("cards-container-work-from-home");
-//   const scrollAmount = 300; // Adjust this based on card width
-  
-//   if (direction === 'left') {
-//     container.scrollBy({
-//       left: -scrollAmount,
-//       behavior: 'smooth',
-//     });
-//   } else if (direction === 'right') {
-//     container.scrollBy({
-//       left: scrollAmount,
-//       behavior: 'smooth',
-//     });
-//   }
-// }
-
-// function scrollCarousel(direction) {
-//   const container = document.getElementById('cards-container-part-times');
-//   const scrollAmount = 300; 
-
-//   if (direction === 'left') {
-//     container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
-//   } else if (direction === 'right') {
-//     container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-//   }
-// }
-// function scrollCarousel(direction) {
-//   const container = document.getElementById('cards-container-full-times');
-//   const scrollAmount = 300; 
-
-//   if (direction === 'left') {
-//     container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
-//   } else if (direction === 'right') {
-//     container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-//   }
-// }
-// function scrollCarousel(direction) {
-//   const container = document.getElementById('cards-container-freelances');
-//   const scrollAmount = 300; 
-
-//   if (direction === 'left') {
-//     container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
-//   } else if (direction === 'right') {
-//     container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-//   }
-// }
-
-
-
-
 

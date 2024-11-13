@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Santoshi:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satoshi:wght@400;700&display=swap');
 
 * {
-    font-family: 'Santoshi', sans-serif;
+    font-family: 'Satoshi', sans-serif;
 }
 
 .main {
@@ -9,9 +9,9 @@
     padding-bottom: 3rem;
 }
 
-body {
+/* body {
     font-family: 'Santoshi', sans-serif;
-}
+} */
 
 
 /*-------------------------- home serch bar-------------------------------------------- */
@@ -37,7 +37,7 @@ body {
     gap: 3vw;
 }
 
-.worksiy-home-search-col-md-4.worksiy-home-search-heading-text {
+.over-text-container{
     font-size: 1.5rem;
     margin: 0;
     font-weight: 500;
@@ -223,9 +223,9 @@ body {
 
 /* Title Styling */
 .perfect-job-for-you-category-container h4 {
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 1px;
-    font-size: 30px;
+    font-size: 2rem;
 }
 
 /* Flexbox for card items (single row) */
@@ -277,11 +277,10 @@ body {
     /* Ensures icon background matches category color */
 }
 
-.perfect-job-for-you-card-content h6 {
-    font-family: 'Inter', sans-serif;
+/* .perfect-job-for-you-card-content h6 {
     font-size: 1rem;
     margin-top: 0.5rem;
-}
+} */
 
 /* Background style for the card */
 .perfect-job-for-you-background-style {
@@ -372,9 +371,9 @@ body {
 
     /* Title Styling */
     .perfect-job-for-you-category-container h4 {
-        font-weight: 600;
+        font-weight: 500;
         letter-spacing: 1px;
-        font-size: 22px;
+        font-size:1.2rem;
     }
 }
 
@@ -410,17 +409,18 @@ body {
 }
 
 .popularcategories-category-title {
-    font-size: 14px;
-    /* Slightly larger font */
+    font-size: 0.9rem;
     font-weight: 500;
-    /* Medium weight for better visibility */
     margin: 0;
-    color: #222;
-    /* Darker text */
 }
 
 
 /* ----------------------------Jobs by Location----------------------- */
+
+.job-by-location-header{
+    font-size: 2rem;
+    font-weight: 500;
+}
 
 .hiring-companies-based-carousel-container {
     width: 100%;
@@ -528,26 +528,32 @@ body {
 
 .carousel-btn {
     background-color: #fff;
-    color: rgb(0, 0, 253);
+    color: rgb(0, 123, 255);
     border: none;
-    border-radius: 50px;
-    padding: 5px 10px;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1rem;
     transition: background-color 0.3s ease;
 }
 
 .carousel-btn:hover {
-    background-color: rgb(0, 0, 253);
-    color: #fff;
+    background-color: rgb(0, 123, 255);
+    color: rgb(247, 247, 247);
 }
 
 
 
 
 @media (max-width: 1200px) {
+    
     .hiring-companies-based-carousel-card {
         flex: 0 0 200px;
+    }
+
+    .carousel-navigation{
+        display: none;
     }
 }
 
@@ -564,9 +570,11 @@ body {
     .hiring-companies-based-scroll-thumb {
         width: 30%;
     }
+   
 }
 
 @media (max-width: 480px) {
+    
     .image-container {
         margin-left: 0.7rem;
     }
@@ -584,10 +592,12 @@ body {
     }
 }
 
-
-
-
-
+@media(max-width:586px){
+    .job-by-location-header{
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+}
 
 
 /* <!------- CSS of -->> Latest jobs on Workisy , full time,freelance,parttime,workfrom home -------> */
@@ -611,11 +621,15 @@ body {
 .category-button {
     margin: 0.5rem;
     scrollbar-width: none;
+    font-size: 1rem;
+    font-weight:500;
 }
 
 .category-button:hover {
     background-color: rgb(0, 123, 255);
     color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight:500;
 }
 
 .scroll-container::-webkit-scrollbar {
@@ -672,6 +686,7 @@ body {
     display: flex;
     align-items: center;
     color: #6c757d;
+    gap:0.8rem;
 }
 
 .job-info i {
@@ -692,17 +707,17 @@ body {
     gap: 1rem;
     justify-content: right;
     align-items: center;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
 }
 
 .latest-job-carousel-btn {
-    background-color: #ffffff;
-    color: #007bff;
+    color:rgb(0, 123, 255) ;
+    background-color:#fff;
     border: none;
     border-radius: 50%;
-    width: 2.5rem;
-    height: 2.5rem;
-    font-size: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1rem;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -711,18 +726,35 @@ body {
 }
 
 .latest-job-carousel-btn:hover {
-    background-color: #0056b3;
-    color: #fff;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    background-color: rgb(0, 123, 255);
+    color: rgb(247, 247, 247);
 }
 
-/* .latest-job-carousel-btn:active {
-    background-color: #003f7f;
+.latest-job-part{
+    font-size: 2rem;
+    font-weight: 500;
 }
 
-.latest-job-carousel-btn.prev {
-    transform: rotate(180deg);
-} */
+.work-from-part{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.part-time-part{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.full-time-part{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.freelance-part{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+
 
 @media (max-width:576px) {
     .card {
@@ -736,18 +768,50 @@ body {
     .category-button {
         margin: 0%;
         margin-top: 1.5vw;
-        font-size: 10px;
+        font-size:0.6rem;
         font-weight: 600;
+    }
+
+    .latest-job-carousel-btn{
+        display: none;
+    }
+
+    .latest-job-part {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .work-from-part{
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-top:-10px;
+    }
+
+    .part-time-part{
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-top:-10px;
+    }
+
+    .full-time-part{
+        margin-top:-20px;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    .freelance-part{
+        margin-top:-20px;
+        font-size: 1.2rem;
+        font-weight: 500;
     }
 }
 
-/* Find Job Vacancies By------------------------------------------------------------------------ */
+/* --------------------Find Job Vacancies By------------------------------------------------ */
 
 
 
 .nav-tabs .nav-link {
-    font-family: "Inter", sans-serif;
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 1rem;
     text-transform: capitalize;
     position: relative;
     color: gray;
@@ -782,16 +846,15 @@ body {
     text-decoration: none;
     color: black;
     border: 1px solid gray;
-    font-family: "Inter", sans-serif;
     border-radius: 20px;
     padding: 0.6rem;
-    font-size: 12px;
+    font-size:0.7rem;
     transition: all 0.5s;
     cursor: pointer;
 }
 
 .tab-link:hover {
-    background-color: rgb(24, 121, 24);
+    background-color: rgb(0, 123, 255);
     color: white;
     text-decoration: none;
     /* Ensure no underline on hover */
@@ -804,9 +867,9 @@ body {
     padding: 0.5rem;
     border-radius: 20px;
     /* width: 8rem; */
-    font-size: 13px;
+    font-size:0.8rem;
     text-align: center;
-    font-weight: 200;
+    font-weight: 500;
     font-family: "Inter", sans-serif;
     transition: all 0.7s;
     cursor: pointer;
@@ -827,17 +890,28 @@ body {
 }
 
 .heading-job-vacancies {
-    font-family: "Inter", sans-serif;
-    font-weight: 600;
-    font-size: 1.7rem;
-    color: #333;
+    font-weight:500;
+    font-size: 2rem;
     margin-bottom: 1rem;
+}
+
+@media(max-width:586px){
+    .heading-job-vacancies {
+        font-size: 1.2rem;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .nav-tabs .nav-link {
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
 }
 
 
 
 
-/* Accelerate your job search with premium services---------------------------------------------------------- */
+/* -----------------------for candidate and employers----------------------- */
 
 
 .premium-section {
@@ -990,11 +1064,10 @@ body {
 /* -------------------------footer css----------------------------------------- */
 
 
-#footer {
+.footer-1{
     width: 100%;
-    background-color: #333;
-    color: white;
-    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    color: rgb(0, 0, 0);
 }
 
 .footer-content {
@@ -1003,21 +1076,26 @@ body {
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: space-between;
-    background-color: #444;
-    color: white;
+
+}
+
+.footer-1-text{
+    font-size: 0.8rem;
+    font-weight: 500;
 }
 
 .company {
     max-width: 200px;
     flex: 1 1 200px;
+    
 }
 
 .company h6 {
     font-size: 1.2rem;
     text-transform: capitalize;
-    font-weight: bold;
+    font-weight:500;
     margin-bottom: 1rem;
-    color: #FFD700;
+    color: #000000;
 }
 
 .company ul {
@@ -1032,33 +1110,42 @@ body {
 
 .company ul li a {
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
     transition: color 0.3s;
+    font-size: 0.8rem;
+    font-weight: 500;
 }
 
 .company ul li a:hover {
-    color: #FFD700;
+    color: #002fff;
 }
 
 .follow-us {
+    
     text-align: center;
     flex: 1 1 200px;
 }
 
+.footer-1-follow-us{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
 .icon-btn {
-    padding: 0.5rem;
+    border: none;
+    height: 2rem;
+    width: 2rem;
     border-radius: 50%;
-    border: 1px solid gray;
-    background-color: #555;
+    background-color:#000000;
     color: white;
     cursor: pointer;
     transition: all 0.3s;
-    margin: 0 0.5rem;
+    margin: 0 0.2rem;
 }
 
 .icon-btn:hover {
-    background-color: #FFD700;
-    color: black;
+    background-color: #002fffb7;
+    color: rgb(255, 255, 255);
 }
 
 .icon-btn i {
@@ -1091,6 +1178,7 @@ body {
 .footer-text p {
     margin: 0;
     color: #111111;
+    font-size: 0.8rem;
 }
 
 .footer-links {
@@ -1103,10 +1191,12 @@ body {
     text-decoration: none;
     color: rgb(0, 0, 0);
     transition: color 0.3s;
+    font-size:0.9rem;
+    font-weight: 500;
 }
 
 .footer-links a:hover {
-    color: #FFD700;
+    color: #002fffb7;
 }
 
 /* Media Queries */
@@ -1150,7 +1240,7 @@ body {
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width:586px) {
     .footer-content {
         padding: 1rem;
     }
@@ -1160,15 +1250,23 @@ body {
     }
 
     .company h6 {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
-    .company ul li {
-        font-size: 0.8rem;
+    .footer-1-li {
+        font-size: 0.3rem;
+        font-weight: 500;
     }
 
     .footer-logo .logo {
         width: 120px;
+       
+    }
+
+    .footer-logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .footer-bottom {
@@ -1180,4 +1278,5 @@ body {
         flex-direction: column;
         align-items: center;
     }
+    
 }
